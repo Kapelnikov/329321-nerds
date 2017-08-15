@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  </head>
+  <body>
+  	<div class="page-container">
+  		<header class="page-header">
+  			<div class="page-logo">
+  				<a href="index.html"><img class="page-logo-image" src="http://placehold.it/100x50" alt="логотип студии Нёрдс"></a>
+  			</div>
+  			<nav class="site-navigation">
+				<ul class="site-navigation-list">
+					<li class="site-navigation-item"><a href="#">Студия</a></li>
+					<li class="site-navigation-item"><a href="#">Клиенты</a></li>
+					<li class="site-navigation-item site-navigation-current"><a>Магазин</a></li>
+					<li class="site-navigation-item"><a href="#">Контакты</a></li>
+				</ul>
+		
+				<a href="#" class="page-cart">Корзина</a>
+			
+  			</nav>
+  			<h1 class="main-heading">Магазин готовых шаблонов</h1>
+  		</header>
+		<main class="container">	
+			<section class="template-filters">
+				<h2 class="visually hidden">Фильтр шаблонов</h2>	
+					<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+						<fieldset>
+            				<legend>Стоимость:</legend>
+								0 <input type="range" id="price-range" name="price-range" min="0" max="15000">15 000
+
+						</fieldset>
+          
+						<fieldset>
+            				<legend>Сетка:</legend>
+            					<ul>
+              						<li class="filter-option">
+                						<input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout-type" value="shaving" checked>Адаптивная</li>
+              						<li class="filter-option">
+               							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout-type" value="hair-care">Фиксированная</li>
+              						<li class="filter-option">
+                						<input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout-type" value="accessories">Резиновая</li>
+            					</ul>
+          				</fieldset>
+
+
+          				<fieldset>
+            				<legend>Особенности:</legend>
+            					<ul>
+             						 <li class="filter-option">
+                						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>Слайдер</li>
+             						 <li class="filter-option">
+               							 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages">Блок преимуществ</li>
+              						<li class="filter-option">
+                						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>Новости</li>
+              						<li class="filter-option">
+                						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">Галерея</li>
+             						 <li class="filter-option">
+                						<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="cart">Корзина</li>
+            					</ul>
+          				</fieldset>
+          
+          				<button type="submit" class="filter-button button">Показать</button>
+        			</form>
+			</section>
+	
+			<section class="templates-examples">
+				<h2 class="visually-hidden">Виды шаблонов</h2>
+					
+					<fieldset>
+            				<legend>Сортировать:</legend>
+            					<ul>
+             						 <li class="template-examples-sort">
+                						<input class="visually-hidden filter-input" type="checkbox" name="by-price" checked>По цене</li>
+             						 <li class="template-examples-sort">
+               							 <input class="visually-hidden filter-input" type="checkbox" name="by-type">По типу</li>
+              						<li class="template-examples-sort">
+                						<input class="visually-hidden filter-input" type="checkbox" name="by-name">По названию</li>
+            					</ul>
+          				</fieldset>
+          
+						<ul class="templates-examples-list">
+							<li class="templates-examples-item">
+								<img class="templates-examples-catalog-img" src="http://placehold.it/300x500" alt="превью шаблона Седона">
+									<p class="templates-examples-heading">Sedona</p>
+									<p class="templates-examples-text">Информационный сайт для туристов</p>
+									<p class="templates-examples-price"><b>9 900 Руб.</b><a class="button" href="#">Купить</a></p>
+							</li>
+							<li class="templates-examples-item">
+								<img class="templates-examples-catalog-img" src="http://placehold.it/300x500" alt="превью шаблона Пинк">
+							</li>
+
+							<li class="templates-examples-item">
+								<img class="templates-examples-catalog-img" src="http://placehold.it/300x500" alt="превью шаблона Барбершоп Бородинский">
+							</li>
+
+							<li class="templates-examples-item">	
+								<img class="templates-examples-catalog-img" src="http://placehold.it/300x500" alt="превью шаблона Мишки">
+							</li>
+
+							<li class="templates-examples-item">
+								<img class="templates-examples-catalog-img" src="http://placehold.it/300x500" alt="превью шаблона Учеба">
+							</li>
+							
+							<li class="templates-examples-item">
+								<img class="templates-examples-catalog-img" src="http://placehold.it/300x500" alt="превью шаблона Кваст">
+							</li>
+						</ul>
+
+					<ul class="pagination-list">
+         				<li class="pagination-item pagination-item-current"><a>1</a></li>
+          				<li class="pagination-item"><a href="#">2</a></li>
+          				<li class="pagination-item"><a href="#">3</a></li>
+        			</ul>
+					<button class="templates-examples-catalog-btn">Следующая</button>
+		
+			</section>
+	</main>
+	<footer class="page-footer">
+		<div class="contact-map">
+			<div class="company-adress">
+				
+				<p class="footer-company-title">Nёrds design stuido</p>
+				
+				<p class="footer-company-text">191186, Санкт-Перербург, <br>
+				ул. Б. Конюшенная, д. 19/8</p>
+
+				<p class="footer-company-text">тел. +7(812) 275-75-75</p>
+				
+				<a href="#" class="button-contact">Напишите нам</a>
+
+			</div>
+		</div>
+		<div class="social-sites">
+			<div class="social-buttons">
+				<ul>
+					<li><a href="#"><img class="social-btn" src="http://placehold.it/30x30" alt="соцкнопка вКонтакте">вКонтакте</a></li>
+					<li><a href="#"><img class="social-btn" src="http://placehold.it/30x30" alt="соцкнопка Фейсбук">Фейсбук</a></li>
+					<li><a href="#"><img class="social-btn" src="http://placehold.it/30x30" alt="соцкнопка Инстаграм">Инстаграм</a></li>
+				</ul>
+			</div>
+				<div class="social-discount">
+					<p class="social-discount-title"><b>Давайте дружить, это выгодно!</b></p>
+					<p class="social-discount-text">Cкидка 10% для друзей из социальных сетей.</p>
+				</div>
+			</div>
+	</footer>
+	</div>
+  </body>
+</html>
