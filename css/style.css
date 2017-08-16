@@ -1,0 +1,52 @@
+
+body {
+	font-family: Roboto, Arial, sans-serif;
+
+}
+
+.page-header {
+	background-color: #eeeeee;
+}
+
+.visually-hidden {
+	visibility: hidden;
+}
+
+.slider-title {
+	font-size: 55px;
+	color: #000000;
+}
+
+.slider-text {
+	font-size: 16px;
+	color: #283136;
+	line-height: 24px;
+}
+
+.slider-button {
+	font-size: 16px;
+	text-transform: uppercase;
+	
+}
+
+.company-features-title {
+	font-size: 24px;
+	text-transform: uppercase;
+
+}
+
+.order-button {
+	font-size: 16x;
+	text-transform: uppercase;
+	font-weight: bolder;
+	color:#ffffff;
+
+}
+
+.main-heading {
+	font-size: 55px;
+	color: #000000;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+}
+
