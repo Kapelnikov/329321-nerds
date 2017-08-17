@@ -4,6 +4,11 @@ body {
 
 }
 
+.page-container {
+	width: 1440px;
+	margin: 0 auto;
+}
+
 .page-header {
 	background-color: #eeeeee;
 }
@@ -43,10 +48,20 @@ body {
 
 }
 
+.contact-map {
+	height: 416px;
+	background-image: url("../img/layer-map.jpg"); /* подложка под фрейм карты */
+	background-position: 50% 50%;
+	
+}
+
+
+
 .main-heading {
 	font-size: 55px;
+	font-weight: 500;
 	color: #000000;
-	letter-spacing: 0.075em;
-	text-transform: uppercase;
+	letter-spacing: 0.055em;
+	
 }
 
