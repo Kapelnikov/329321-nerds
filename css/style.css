@@ -13,9 +13,7 @@ body {
 	background-color: #eeeeee;
 }
 
-.visually-hidden {
-	visibility: hidden;
-}
+
 
 .slider-title {
 	font-size: 55px;
@@ -39,6 +37,26 @@ body {
 	text-transform: uppercase;
 
 }
+
+.company-info-title {
+	font-size: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.company-info-heading {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.company-info-item {
+	font-size: 16px;
+	color: #283136;
+	line-height: 24px;
+}
+
 
 .order-button {
 	font-size: 16x;
