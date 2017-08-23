@@ -37,12 +37,12 @@
           
 						<fieldset>
             				<legend>Сетка:</legend>
-            					<ul>
-              						<li class="filter-option">
+            					<ul class="filter-option-list">
+              						<li class="filter-option-item">
                 						<input class="filter-input filter-input-radio" type="radio" name="layout-type" id="adaptive" value="shaving" checked><label for="adaptive">Адаптивная</label></li>
-              						<li class="filter-option">
+              						<li class="filter-option-item">
                							<input class="filter-input filter-input-radio" type="radio" name="layout-type" id="fixed" value="hair-care"><label for="fixed">Фиксированная</label></li>
-              						<li class="filter-option">
+              						<li class="filter-option-item">
                 						<input class="filter-input filter-input-radio" type="radio" name="layout-type" id="rubber" value="accessories"><label for="rubber">Резиновая</label></li>
             					</ul>
           				</fieldset>
@@ -50,16 +50,16 @@
 
           				<fieldset>
             				<legend>Особенности:</legend>
-            					<ul>
-             						 <li class="filter-option">
+            					<ul class="filter-option-list">
+             						 <li class="filter-option-item">
                 						<input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label></li>
-             						 <li class="filter-option">
+             						 <li class="filter-option-item">
                							 <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="advantages"><label for="advantages">Блок преимуществ</label></li>
-              						<li class="filter-option">
+              						<li class="filter-option-item">
                 						<input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="news" checked><label for="news">Новости</label></li>
-              						<li class="filter-option">
+              						<li class="filter-option-item">
                 						<input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery"><label for="gallery">Галерея</label></li>
-             						 <li class="filter-option">
+             						 <li class="filter-option-item">
                 						<input class="filter-input filter-input-checkbox" type="checkbox" name="cart" id="cart"><label for="cart">Корзина</label></li>
             					</ul>
           				</fieldset>
@@ -98,7 +98,7 @@
 											<span class="templates-examples-text">Информационный сайт для туристов</span>
 										</h3>
 								</a>
-									<p class="templates-examples-price"><b>9 900 Руб.</b><a class="order-button" href="#">Купить</a></p>
+									<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
 							</li>
 							<li class="templates-examples-item">
 								<a href="#">
@@ -108,7 +108,7 @@
 											<span class="templates-examples-text">Продуктовый лендинг приложения для IOS и Android</span>
 										</h3>
 								</a>
-									<p class="templates-examples-price"><b>9 900 Руб.</b><a class="order-button" href="#">Купить</a></p>
+									<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
 							</li>
 
 							<li class="templates-examples-item">
@@ -119,7 +119,7 @@
 											<span class="templates-examples-text">Сайт салона красоты. Для мужчин, да.</span>
 										</h3>
 								</a>
-									<p class="templates-examples-price"><b>11 900 Руб.</b><a class="order-button" href="#">Купить</a></p>
+									<p class="red templates-examples-price"><b>11 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
 							</li>
 
 							<li class="templates-examples-item">	
@@ -130,7 +130,7 @@
 											<span class="templates-examples-text">Интернет-магазин вязаных игрушек</span>
 										</h3>
 									</a>
-									<p class="templates-examples-price"><b>12 900 Руб.</b><a class="order-button" href="#">Купить</a></p>
+									<p class="red templates-examples-price"><b>12 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
 							</li>
 
 							<li class="templates-examples-item">
@@ -141,7 +141,7 @@
 											<span class="templates-examples-text">Лендинг курсов повышения квалификации</span>
 										</h3>
 									</a>
-									<p class="templates-examples-price"><b>13 900 Руб.</b><a class="order-button" href="#">Купить</a></p>
+									<p class="red templates-examples-price"><b>13 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
 							</li>
 							
 							<li class="templates-examples-item">
@@ -152,7 +152,7 @@
 											<span class="templates-examples-text">Промо-сайт производителя крафтового кваса</span>
 										</h3>
 									</a>
-									<p class="templates-examples-price"><b>15 000 Руб.</b><a class="order-button" href="#">Купить</a></p>
+									<p class="red templates-examples-price"><b>15 000 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
 							</li>
 
 							<li class="catalog-item">
@@ -187,15 +187,15 @@
 						<label>Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста"></label>
 						<label>Ваш email:<input type="email" placeholder="Для отправки ответа"></label>
 						<label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
-					
+						<label>Отправить<input type="submit"></label>
 					<button class="modal-close" type="button">Закрыть</button>
+
 				</form>
 				
 			</div>
 		</div>
-		<div class="social-sites">
-			<div class="social-buttons">
-				<ul>
+			<div class="social-buttons-container">
+				<ul class="social-buttons-list">
 					<li><a href="#">вКонтакте</a></li>
 					<li><a href="#">Фейсбук</a></li>
 					<li><a href="#">Инстаграм</a></li>
@@ -205,8 +205,7 @@
 					<p class="social-discount-title"><b>Давайте дружить, это выгодно!</b></p>
 					<p class="social-discount-text">Cкидка 10% для друзей из социальных сетей.</p>
 				</div>
-			</div>
-	</footer>
+			</footer>
 	</div>
   </body>
 </html>

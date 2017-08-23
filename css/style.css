@@ -5,7 +5,7 @@ body {
 
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
-
+	
 
 }
 
@@ -33,16 +33,70 @@ a {
 
 .page-header {
 	background-color: #eeeeee;
+
 }
 
 
+.site-navigationclass, 
+.site-navigation-list {
+	list-style: none;
+
+}
+
+.site-navigation-list li {
+	width: 90px;
+}
+
+.site-navigation-list a {
+	
+	text-transform: uppercase;
+	padding-bottom: 16px;
+	font-weight: 500;
+}
+
+.site-navigation-list a:hover {
+	color: #fb565a;
+	
+}
+
+.site-navigation-list a:active {
+	color: #000000;
+	opacity: 0.3;
+
+}
+
+.site-navigation-current {
+	border-bottom: 2px solid #fb565a;
+}
+
+.page-cart {
+	text-transform: uppercase;
+	padding-bottom: 16px;
+	font-weight: 500;
+}
+
+.page-cart:hover {
+	color: #fb565a;
+}
+
+.page-cart:focus {
+	color: #000000;
+	opacity: 0.3;
+
+}
+
+.slider-list {
+	list-style: none;
+}
 
 .slider-title {
+	font-weight: 500;
 	font-size: 55px;
 	color: #000000;
 }
 
 .slider-text {
+	font-weight: 400;
 	font-size: 16px;
 	color: #283136;
 	line-height: 24px;
@@ -50,13 +104,33 @@ a {
 
 .slider-button {
 	font-size: 16px;
+	font-weight: 500;
 	text-transform: uppercase;
-	
+	background-color: #fb565a;
+	color: #ffffff;
+}
+
+.slider-button:hover {
+	background-color: #e74246;
+
+}
+
+.slider-button:focus {
+	background-color: #e74246;
+	text-shadow: 0 3px 0 rgba(0,1,1,0.1);
+	opacity: 0.3;
 }
 
 .company-features-title {
 	font-size: 24px;
 	text-transform: uppercase;
+	font-weight: 500;
+
+}
+
+.company-features-text {
+	font-size: 16px;
+	font-weight: 400;
 
 }
 
@@ -73,20 +147,51 @@ a {
 	text-transform: uppercase;
 }
 
+.company-features-list {
+	list-style: none;
+
+}
+
 .company-info-item {
 	font-size: 16px;
+	font-weight: 400;
 	color: #283136;
 	line-height: 24px;
+
 }
 
 
-.order-button {
-	font-size: 16x;
+.company-merits-heading {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
 	text-transform: uppercase;
-	font-weight: bolder;
-	
 
 }
+
+.company-merits-numerals {
+	font-size: 45px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.company-merits-facts {
+	font-size: 16px;
+	font-weight: 400;
+	color: #283136;
+
+}
+
+.company-clients-list {
+	list-style: none;
+}
+
+
+
+
+
+
+
 
 .contact-map {
 	height: 416px;
@@ -95,7 +200,12 @@ a {
 	
 }
 
+.social-buttons-list {
+	list-style: none;
+}
 
+
+/* уникальные стили внутренней */
 
 .main-heading {
 	font-size: 55px;
@@ -105,3 +215,119 @@ a {
 	
 }
 
+.filter legend {
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+
+}
+
+.filter li {
+	font-weight: normal;
+	font-size: 16px;
+	color: #283136;
+
+}
+
+.filter-button {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 16px;
+	color: #000000;
+}
+
+.templates-examples-heading {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+	color: #000000;
+}
+
+.templates-examples-text {
+	
+	font-weight: normal;
+	font-size: 16px;
+	color: #666666;
+}
+
+.templates-examples-price {
+	font-weight: 500;
+	font-size: 16px;
+	color: #ffffff;
+	width: 100px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 3px 3px 3px 3px;
+}
+
+.templates-examples-price a {
+	color: #ffffff;
+}
+
+.red {
+	background-color: #fb565a;
+}
+
+
+.red:hover {
+	background-color: #e74246;
+	cursor: pointer;
+}
+
+.red:active {
+	background-color: #d7373b;
+	text-shadow: 0 3px 0 rgba(0,1,1,0.1);
+}
+
+.green {
+	
+	background-color: #00ca74;
+	
+}
+
+.green:hover {
+	background-color: #00bc6c;
+	cursor: pointer;
+}
+
+.green:active {
+	background-color: #00aa62;
+	text-shadow: 0 3px 0 rgba(0,1,1,0.1);
+}
+
+.yellow {
+
+	background-color: #efc84a;
+}
+
+.yellow:hover {
+	background-color: #eab534;
+	cursor: pointer;
+}
+
+.yellow:active {
+	background-color: #e5a722;
+	text-shadow: 0 3px 0 rgba(0,1,1,0.1);
+}
+
+
+
+.filter-option-list {
+	list-style: none;
+}
+
+.template-examples-sort-list {
+	list-style: none;
+}
+
+.templates-examples-list {
+	list-style: none;
+}
+
+.pagination-list {
+	list-style: none;	
+}
