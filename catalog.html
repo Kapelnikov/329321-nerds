@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<div class="page-container">
   		<header class="page-header">
   			<div class="page-logo">
-  				<a href="index.html"><img class="page-logo-image" src="http://placehold.it/100x50" alt="логотип студии Нёрдс"></a>
+  				<a href="index.html"><img class="page-logo-image" src="img/nerds-logo.svg" alt="логотип студии Нёрдс"></a>
   			</div>
   			<nav class="site-navigation">
 				<ul class="site-navigation-list">
@@ -64,7 +65,7 @@
             					</ul>
           				</fieldset>
           
-          				<button type="submit" class="filter-button button">Показать</button>
+          				<button type="submit" class="grey filter-button">Показать</button>
         			</form>
 			</section>
 	
@@ -164,48 +165,11 @@
           				<li class="pagination-item"><a href="#">2</a></li>
           				<li class="pagination-item"><a href="#">3</a></li>
         			</ul>
-					<button type="button" class="templates-examples-catalog-btn">Следующая</button>
+					<button type="button" class="grey filter-button">Следующая</button>
 		
 			</section>
 	</main>
-	<footer class="page-footer">
-		<div class="contact-map">
-			<img class="client-logo" src="img/map-marker.png" width="231" height="190" alt="маркер на карте студии Нёрдс">
-			<div class="company-adress">
-				
-				<p class="footer-company-title">Nёrds design stuido</p>
-				
-				<p class="footer-company-text">191186, Санкт-Перербург, <br>
-				ул. Б. Конюшенная, д. 19/8</p>
-
-				<p class="footer-company-text">тел. +7(812) 275-75-75</p>
-				
-				<a href="#" class="button-contact">Напишите нам</a>
-
-				<form action="https://htmlacademy.ru/" method="post" class="write-us">
-					<p>Напишите нам</p>
-						<label>Ваше имя:<input type="text" placeholder="Представьтесь пожалуйста"></label>
-						<label>Ваш email:<input type="email" placeholder="Для отправки ответа"></label>
-						<label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
-						<label>Отправить<input type="submit"></label>
-					<button class="modal-close" type="button">Закрыть</button>
-
-				</form>
-				
-			</div>
-		</div>
-			<div class="social-buttons-container">
-				<ul class="social-buttons-list">
-					<li><a href="#">вКонтакте</a></li>
-					<li><a href="#">Фейсбук</a></li>
-					<li><a href="#">Инстаграм</a></li>
-				</ul>
-			</div>
-				<div class="social-discount">
-					<p class="social-discount-title"><b>Давайте дружить, это выгодно!</b></p>
-					<p class="social-discount-text">Cкидка 10% для друзей из социальных сетей.</p>
-				</div>
-			</footer>
+	
 	</div>
   </body>
 </html>
