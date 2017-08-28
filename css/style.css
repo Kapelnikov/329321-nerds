@@ -29,11 +29,44 @@ a {
 .page-container {
     width: 1440px;
     margin: 0 auto;
+    
 }
 
 .page-header {
     background-color: #eee;
+    display: flex;
+    
+    
 }
+
+.page-logo-image {
+    
+    outline: 2px solid red;
+
+}
+
+.site-navigation {
+    width: 440px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation-list {
+    list-style: none;
+    
+    outline: 2px solid red;
+
+    display: flex;
+}
+
+.page-cart {
+    font-weight: 500;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+    outline: 2px solid green;
+}
+
+
 
 .page-logo-image:hover {
     opacity: .8;
@@ -44,10 +77,10 @@ a {
 }
 
 
-.site-navigationclass,
-.site-navigation-list {
-    list-style: none;
-}
+
+
+
+
 
 .site-navigation-list li {
     width: 90px;
@@ -74,13 +107,8 @@ a {
     border-bottom: 2px solid #fb565a;
 }
 
-.page-cart {
-    font-weight: 500;
 
-    padding-bottom: 16px;
 
-    text-transform: uppercase;
-}
 
 .page-cart:hover {
     color: #fb565a;
