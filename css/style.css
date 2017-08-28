@@ -35,13 +35,12 @@ a {
 .page-header {
     background-color: #eee;
     display: flex;
-    
+    justify-content: space-around;
     
 }
 
 .page-logo-image {
     
-    outline: 2px solid red;
 
 }
 
@@ -49,21 +48,44 @@ a {
     width: 440px;
     margin: 0;
     padding: 0;
+  
+
 }
 
 .site-navigation-list {
     list-style: none;
     
-    outline: 2px solid red;
-
     display: flex;
 }
 
+.site-navigation-list li {
+    width: 90px;
+    
+  
+}
+
+.site-navigation-list a {
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+.site-navigation-list a:hover {
+    color: #fb565a;
+}
+
+.site-navigation-list a:active {
+    opacity: .3;
+    color: #000;
+}
+
+
+
 .page-cart {
     font-weight: 500;
-    padding-bottom: 16px;
+    
     text-transform: uppercase;
-    outline: 2px solid green;
+   
 }
 
 
@@ -79,29 +101,6 @@ a {
 
 
 
-
-
-
-.site-navigation-list li {
-    width: 90px;
-}
-
-.site-navigation-list a {
-    font-weight: 500;
-
-    padding-bottom: 16px;
-
-    text-transform: uppercase;
-}
-
-.site-navigation-list a:hover {
-    color: #fb565a;
-}
-
-.site-navigation-list a:active {
-    opacity: .3;
-    color: #000;
-}
 
 .site-navigation-current {
     border-bottom: 2px solid #fb565a;
@@ -158,6 +157,18 @@ a {
     text-shadow: 0 3px 0 rgba(0,1,1,.1);
 }
 
+.company-features {
+   
+
+}
+
+.company-features-list {
+   
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
 .company-features-title {
     font-size: 24px;
     font-weight: 500;
@@ -167,7 +178,15 @@ a {
 
 .company-features-text {
     font-size: 16px;
+    line-height: 24px;
     font-weight: 400;
+}
+
+
+.company-info {
+    display: flex;
+    
+    align-items: center;
 }
 
 .company-info-title {
@@ -186,9 +205,6 @@ a {
     color: #000;
 }
 
-.company-features-list {
-    list-style: none;
-}
 
 .company-info-item {
     font-size: 16px;
@@ -224,6 +240,8 @@ a {
 
 .company-clients-list {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -257,8 +275,14 @@ a {
     background-position: 50% 50%;
 }
 
+.social-sites {
+    display: flex;
+    justify-content: space-around;
+}
+
 .social-buttons-list {
     list-style: none;
+    display: flex;
 }
 
 
@@ -331,11 +355,16 @@ textarea::placeholder {
 .main-heading {
     font-size: 55px;
     font-weight: 500;
-
+    text-align: center;
     letter-spacing: .055em;
-
+     
     color: #000;
 }
+
+.inner-page-wrapper {
+    display: flex;
+}
+
 
 .filter legend {
     font-size: 18px;
@@ -351,6 +380,9 @@ textarea::placeholder {
     color: #283136;
 }
 
+.template-examples-sort-container {
+    display: flex;
+}
 
 .templates-examples-heading {
     font-size: 18px;
@@ -366,6 +398,21 @@ textarea::placeholder {
     font-weight: normal;
 
     color: #666;
+}
+
+.template-examples-sort-list {
+    list-style: none;
+}
+
+.templates-examples-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.templates-examples-item {
+   
 }
 
 .templates-examples-price {
@@ -441,13 +488,6 @@ textarea::placeholder {
     list-style: none;
 }
 
-.template-examples-sort-list {
-    list-style: none;
-}
-
-.templates-examples-list {
-    list-style: none;
-}
 
 .pagination-list {
     list-style: none;
