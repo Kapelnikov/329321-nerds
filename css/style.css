@@ -387,16 +387,20 @@ textarea::placeholder {
 .templates-examples-heading {
     font-size: 18px;
     font-weight: bold;
-
+    text-align: center;
     text-transform: uppercase;
 
     color: #000;
 }
 
+h3 {
+    text-align: center;
+
+}
+
 .templates-examples-text {
     font-size: 16px;
     font-weight: normal;
-
     color: #666;
 }
 
@@ -408,22 +412,29 @@ textarea::placeholder {
 .templates-examples-list {
     list-style: none;
     display: flex;
-    padding: 0;
-    margin: 0;
     flex-wrap: wrap;
-    
+    outline: 2px solid red;
     width: 760px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 
 }
 
 .templates-examples-item {
-   
+   width: 360px;
+
+}
+
+.example {
+    
+    border: 2px solid red;
 }
 
 .templates-examples-price {
     font-size: 16px;
     font-weight: 500;
-
+    
     width: 100px;
     padding-top: 20px;
     padding-right: 60px;
