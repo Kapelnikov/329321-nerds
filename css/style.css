@@ -11,6 +11,12 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
 .visually-hidden {
     position: absolute;
 
@@ -25,6 +31,24 @@ a {
     border: 0;
 }
 
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    pisition: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .page-container {
     width: 1440px;
@@ -45,21 +69,24 @@ a {
 }
 
 .site-navigation {
-    width: 440px;
+    width: 800px;
     margin: 0;
     padding: 0;
-  
-
+    outline: 2px solid red;
+    display: flex;
+    justify-content: space-between;
 }
 
 .site-navigation-list {
     list-style: none;
     
     display: flex;
+    flex-wrap: wrap;
+    outline: 2px solid green;
 }
 
 .site-navigation-list li {
-    width: 90px;
+  
     
   
 }
@@ -67,7 +94,9 @@ a {
 .site-navigation-list a {
     font-weight: 500;
     text-transform: uppercase;
-
+    display: block;
+    padding: 10px 8px;
+ 
 }
 
 .site-navigation-list a:hover {
@@ -79,14 +108,34 @@ a {
     color: #000;
 }
 
-
-
-.page-cart {
-    font-weight: 500;
-    
-    text-transform: uppercase;
-   
+.user-navigation {
+    list-style: none;
+    outline: 2px solid blue;
 }
+
+.user-navigation a {
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 8px;
+    position: relative;
+}
+
+.user-navigation a::before {
+    content: "";
+   
+    position: absolute;
+    top: 10px;
+    left: -21px;
+    width: 15px;
+    height: 15px;
+    
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+}
+
 
 
 
@@ -283,8 +332,80 @@ a {
 .social-buttons-list {
     list-style: none;
     display: flex;
+   
+    width: 300px;
+    height: 100px;
 }
 
+.social-buttons-list a {
+ 
+    display: block;
+    position: relative;
+    width: 78px;
+    height: 78px;
+    background: #e1e1e1;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin: 0;
+    margin-left: 14px;
+   
+}
+
+.social-buttons-list a:hover, .social-buttons-list a:focus {
+    background: #e74246;
+
+}
+
+.social-buttons-list a:active {
+    background: #d7373b;
+    box-shadow: 0 -3px 0 rgba(0,1,1,.1);
+}
+
+.social-buttons-vk::before {
+    content: "";
+   
+    position: absolute;
+    left: 25px;
+    top: 33px;
+    width: 25px;
+    height: 25px;
+ 
+    background-image: url("../img/vk-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.social-buttons-fb::before {
+    content: "";
+   
+    position: absolute;
+    left: 33px;
+    top: 28px;
+    width: 25px;
+    height: 25px;
+ 
+    background-image: url("../img/fb-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.social-buttons-insta::before {
+    content: "";
+   
+    position: absolute;
+    left: 29px;
+    top: 30px;
+    width: 25px;
+    height: 25px;
+ 
+    background-image: url("../img/insta-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
 
 .social-discount-title {
     font-size: 36px;
