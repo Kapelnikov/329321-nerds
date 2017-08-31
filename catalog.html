@@ -31,18 +31,20 @@
   				
   		</header>
 		<main class="container">
+		
 		<h1 class="main-heading">Магазин готовых шаблонов</h1>	
+		
 		<div class="inner-page-wrapper">
 		
 			<section class="template-filters">
 				<h2 class="visually-hidden">Фильтр шаблонов</h2>	
-					<form class="filter" method="get" action="https://echo.htmlacademy.ru">
-						<fieldset>
+					<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+						<fieldset class="cost">
             				<legend>Стоимость:</legend>
 								0 <input type="range" id="price-range" name="price-range" min="0" max="15000">15 000
 						</fieldset>
           
-						<fieldset>
+						<fieldset class="layout">
             				<legend>Сетка:</legend>
             					<ul class="filter-option-list">
               						<li class="filter-option-item">
@@ -55,7 +57,7 @@
           				</fieldset>
 
 
-          				<fieldset>
+          				<fieldset class="addons">
             				<legend>Особенности:</legend>
             					<ul class="filter-option-list">
              						 <li class="filter-option-item">
@@ -79,7 +81,7 @@
 				<h2 class="visually-hidden">Виды шаблонов</h2>
 					
 					<div class="template-examples-sort-container">
-            				<p class="template-examples-heading">Сортировать:</p>
+            				<p class="template-examples-sort-heading">Сортировать:</p>
             					<ul class="template-examples-sort-list">
              						 <li class="template-examples-sort-item">
                 						<a class="template-examples-sort-btn" href="#">По цене</a></li>
@@ -88,12 +90,12 @@
               						<li class="template-examples-sort-item">
                 						<a class="template-examples-sort-btn" href="#">По названию</a></li>
             					</ul>
+								<div class="template-examples-sort-up-down-container">
+            					
+            						<a href="#" class="template-examples-sort-up"><span class="visually-hidden">Сортировка вверх</span></a>
 
-            					<a href="#" class="template-examples-sort-up">Сортировка вверх</a>
-
-            					<a href="#" class="template-examples-sort-up">Сортировка вниз</a>
-
-
+            						<a href="#" class="template-examples-sort-down"><span class="visually-hidden">Сортировка вниз</span></a>
+								</div>
           			</div>
           
 						<ul class="templates-examples-list">
@@ -165,14 +167,17 @@
 						
 
 						</ul>
-
+				<div class="pagination-wrapper">	
 					<ul class="pagination-list">
          				<li class="pagination-item pagination-item-current"><a>1</a></li>
           				<li class="pagination-item"><a href="#">2</a></li>
           				<li class="pagination-item"><a href="#">3</a></li>
+          				
         			</ul>
-					<button type="button" class="grey filter-button">Следующая</button>
-		
+						<button type="button" class="grey pagination-btn">Следующая</button>
+
+				</div>
+
 			</section>
 		</div>
 	</main>

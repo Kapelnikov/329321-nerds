@@ -19,6 +19,10 @@ img {
 
 }
 
+.hidden {
+    display: none;
+}
+
 .visually-hidden {
     position: absolute;
 
@@ -108,6 +112,9 @@ input[type="radio"].visually-hidden {
    
     padding: 0;
     margin: 0;
+
+  
+    padding-bottom: 10px;
 }
 
 .site-navigation-list a:hover {
@@ -170,6 +177,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-current {
     border-bottom: 2px solid #fb565a;
+
 }
 
 
@@ -703,48 +711,115 @@ input[type="radio"].visually-hidden {
     font-weight: normal;
 }
 
-.write-us-form {
+.write-us-form-wrapper {
     width: 958px;
     height: 589px;
-    margin: 0 auto;
-    margin-bottom: 60px;
-    position: relative;
+    padding: 0.1px;
+
+    margin-top: 12px;
+    margin-left: 36px;
+    
+   
     box-shadow: 0 20px 40px rgba(0,1,1,.75);
+    border: 0.1px solid white;
+ 
+    
 }
 
-.write-us-form p {
+.write-us-form {
+    width: 761px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: -8px;
+    padding: 0.1px;
+    position: relative;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+
+
+.write-us-form-heading {
     font-size: 45px;
     font-weight: 500;
+    margin-top: 67px;
+    margin-left: 96px;
+    padding: 0.1px;
+
+    
 }
+
+.write-us-form-item {
+   
+    width: 361px;
+    margin: 0;
+    padding: 0.1px;
+
+ 
+}
+
+.write-us-form-textarea {
+    width: 760px;
+    margin-top: 2px;
+}
+
+.write-us-form-btn {
+    font-size: 16px;
+    font-weight: bold;
+    
+    
+    width: 260px;
+   
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fff;
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.write-us-form-btn a {
+    color: #fff;
+}
+
 
 .write-us-form label {
     font-size: 16px;
     font-weight: bold;
 
     display: block;
-
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .write-us-form input {
     display: block;
 
-    width: 360px;
+    width: 340px;
     height: 49px;
-
+    
+    padding-left: 14px;
     border-radius: 3px 3px 3px 3px;
+    border: 2px solid #d7dcde;
 }
 
 .write-us-form textarea {
-    width: 759px;
-    height: 113px;
+    width: 740px;
+    height: 100px;
 
+    padding-top: 12px;
+    padding-left: 14px;
+    
     border-radius: 3px 3px 3px 3px;
+    border: 2px solid #d7dcde;
+    resize: none;
 }
 
 input::placeholder {
     font-size: 16px;
-
+    
     opacity: .5;
 }
 
@@ -754,13 +829,19 @@ textarea::placeholder {
     opacity: .5;
 }
 
+.modal-close {
+    border: none;
+    background-color: white;
+}
+
 .modal-close::before {
     content: "";
    
     position: absolute;
     
-    top: 120px;
-    left: 720px;
+    top: 95px;
+    left: 885px;
+
     width: 22px;
     height: 22px;
     
@@ -777,24 +858,46 @@ textarea::placeholder {
     font-size: 55px;
     font-weight: 500;
     text-align: center;
-    letter-spacing: .055em;
+    
      
     color: #000;
+
+  
+    background-color: #eeeeee;
+    margin-top: -2px;
+    
+    padding: 63px;
+
+    padding-bottom: 105px;
 }
 
 .inner-page-wrapper {
+ 
+    margin: 0 auto;
+    margin-bottom: 530px;
+    width: 1160px;
     display: flex;
+    justify-content: space-between;
 }
 
 
-.filter legend {
+.template-filters {
+    
+    width: 260px;
+}
+
+.filter-form {
+    margin-top: 22px;
+}
+
+.filter-form legend {
     font-size: 18px;
     font-weight: bold;
 
     text-transform: uppercase;
 }
 
-.filter li {
+.filter-form li {
     font-size: 16px;
     font-weight: normal;
 
@@ -802,7 +905,102 @@ textarea::placeholder {
 }
 
 .template-examples-sort-container {
+    width: 760px;
     display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 74px;
+    
+    
+}
+
+.template-examples-sort-heading {
+  
+    font-size: 18px;
+    font-weight: bold;
+    width: 360px;
+    text-transform: uppercase;
+    margin-top: 23px;
+}
+
+.template-examples-sort-list {
+    list-style: none;
+    
+    display: flex;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+
+    width: 260px;
+    padding-right: 23px;
+}
+
+.template-examples-sort-list a {
+    display: block;
+   
+    margin-top: 23px;
+    margin-left: 12px;
+}
+
+.template-examples-sort-up-down-container {
+   
+    width: 60px;
+}
+
+.template-examples-sort-btn {
+    font-size: 14px;
+
+    opacity: .3;
+}
+
+.template-examples-sort-btn:hover {
+    opacity: .6;
+}
+
+.template-examples-sort-btn:active {
+    opacity: 1;
+    color: #000;
+}
+
+
+
+.template-examples-sort-up::before {
+    content: "";
+   
+    position: absolute;
+    
+    top: 25px;
+    left: 748px;
+    width: 12px;
+    height: 10px;
+    
+    background-image: url("../img/icon-up-dir.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.template-examples-sort-down::before {
+    content: "";
+   
+    position: absolute;
+    
+    top: 25px;
+    left: 720px;
+    width: 12px;
+    height: 10px;
+    
+    background-image: url("../img/icon-down-dir.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.templates-examples {
+   
+    width: 760px;
 }
 
 .templates-examples-heading {
@@ -812,7 +1010,16 @@ textarea::placeholder {
     text-transform: uppercase;
 
     color: #000;
+
 }
+
+
+.templates-examples-item {
+    
+
+}
+
+
 
 h3 {
     text-align: center;
@@ -825,10 +1032,7 @@ h3 {
     color: #666;
 }
 
-.template-examples-sort-list {
-    list-style: none;
 
-}
 
 .templates-examples-list {
     list-style: none;
@@ -867,6 +1071,7 @@ h3 {
 
     color: #fff;
     border-radius: 3px 3px 3px 3px;
+    margin: 0 auto;
 }
 
 .templates-examples-price a {
@@ -923,23 +1128,75 @@ h3 {
 
 .filter-option-list {
     list-style: none;
+ 
+    margin: 0;
+    padding: 0;
+
+}
+
+.filter-option-list li {
+   
+    padding: 14px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display:none;            
+}
+
+input[type="checkbox"] + label, 
+input[type="radio"] + label {
+  
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 23px;
+    width: 28px;
+    margin: 0 5px 0 0;
+    background-image: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
+}
+
+input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 25px;
+    width: 28px;
+    margin: 0 5px 0 0;
+    background-image: url(../img/radio-on.svg);
+    background-repeat: no-repeat;
 }
 
 
-.pagination-list {
-    list-style: none;
+
+
+.cost {
+    border: none;
 }
+
+.layout {
+    margin-top: 202px;
+    border: none;
+}
+
+.addons {
+    border: none;
+}
+
 
 .filter-button {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
 
-    width: 259px;
+    width: 260px;
     margin-top: 15px;
     margin-left: 15px;
-    padding-top: 20px;
+    padding-top: 16px;
     padding-right: 89px;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
     padding-left: 89px;
 
     text-align: center;
@@ -949,11 +1206,68 @@ h3 {
     border-radius: 3px 3px 3px 3px;
 }
 
+.pagination-wrapper {
+    
+    width: 444px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.pagination-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    width: 171px;
+}
+
 .pagination-item {
     font-size: 16px;
     font-weight: 500;
 
+    width: 50px;
+    height: 50px;
+   
     background-color: #eee;
+    border-radius: 2px;
+  
+    
+}
+
+.pagination-item a {
+    
+    display: block;
+ 
+ 
+   
+    margin: 17px auto;
+    text-align: center;
+
+}
+
+.pagination-btn {
+    font-size: 16px;
+    font-weight: bold;
+
+    width: 260px;
+    
+    padding-top: 16px;
+    padding-right: 89px;
+    padding-bottom: 16px;
+    padding-left: 84px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+
+    display: block;
+
 }
 
 .grey {
@@ -972,20 +1286,7 @@ h3 {
     box-shadow: 0 -3px 0 rgba(0,1,1,.1);
 }
 
-.template-examples-sort-btn {
-    font-size: 14px;
 
-    opacity: .3;
-}
-
-.template-examples-sort-btn:hover {
-    opacity: .6;
-}
-
-.template-examples-sort-btn:active {
-    opacity: 1;
-    color: #000;
-}
 
 .template-examples-heading {
     font-size: 18px;
@@ -993,3 +1294,4 @@ h3 {
 
     text-transform: uppercase;
 }
+
