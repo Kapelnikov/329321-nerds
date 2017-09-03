@@ -40,18 +40,33 @@
 				<h2 class="visually-hidden">Фильтр шаблонов</h2>	
 					<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
 						<fieldset class="cost">
+            				
             				<legend>Стоимость:</legend>
-								0 <input type="range" id="price-range" name="price-range" min="0" max="15000">15 000
+								<div class="range-filter">
+        							<div class="range-controls">
+         							 	<div class="scale">
+            								<div class="bar" style="margin-left: 20%; width: 30%"></div>
+          								</div>
+          								<div class="toggle toggle-min"></div>
+         								 <div class="toggle toggle-max"></div>
+       						 		</div>
+        						<div class="price-controls">
+          							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          							<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        						</div>
+     					 		</div>
+						
+
 						</fieldset>
           
 						<fieldset class="layout">
             				<legend>Сетка:</legend>
             					<ul class="filter-option-list">
-              						<li class="filter-option-item">
+              						<li>
                 						<input class="filter-input filter-input-radio" type="radio" name="layout-type" id="adaptive" value="shaving" checked><label for="adaptive">Адаптивная</label></li>
-              						<li class="filter-option-item">
+              						<li>
                							<input class="filter-input filter-input-radio" type="radio" name="layout-type" id="fixed" value="hair-care"><label for="fixed">Фиксированная</label></li>
-              						<li class="filter-option-item">
+              						<li>
                 						<input class="filter-input filter-input-radio" type="radio" name="layout-type" id="rubber" value="accessories"><label for="rubber">Резиновая</label></li>
             					</ul>
           				</fieldset>
@@ -60,15 +75,15 @@
           				<fieldset class="addons">
             				<legend>Особенности:</legend>
             					<ul class="filter-option-list">
-             						 <li class="filter-option-item">
+             						 <li>
                 						<input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label></li>
-             						 <li class="filter-option-item">
+             						 <li>
                							 <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="advantages"><label for="advantages">Блок преимуществ</label></li>
-              						<li class="filter-option-item">
+              						<li>
                 						<input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="news" checked><label for="news">Новости</label></li>
-              						<li class="filter-option-item">
+              						<li>
                 						<input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery"><label for="gallery">Галерея</label></li>
-             						 <li class="filter-option-item">
+             						 <li>
                 						<input class="filter-input filter-input-checkbox" type="checkbox" name="cart" id="cart"><label for="cart">Корзина</label></li>
             					</ul>
           				</fieldset>
@@ -102,66 +117,73 @@
 							<li class="templates-examples-item">
 								<a href="#">
 									<img class="templates-examples-catalog-img" src="img/img-sedona.png" width="360" height="576" alt="превью шаблона Седона">
-										<h3>	
-											<span class="templates-examples-heading">Sedona</span><br>
-											<span class="templates-examples-text">Информационный сайт<br> для туристов</span>
-										</h3>
+										<h3 class="templates-examples-title">	
+											<p class="templates-examples-heading">Sedona</p><br>
+											<p class="templates-examples-text">Информационный сайт<br> для туристов</p>
+											<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+										</h3 class="templates-examples-title">
 								</a>
-									<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+									
 							</li>
 							<li class="templates-examples-item">
 								<a href="#">
 									<img class="templates-examples-catalog-img" src="img/img-pink.png" width="360" height="576" alt="превью шаблона Пинк">
-										<h3>	
-											<span class="templates-examples-heading">PINK APP</span><br>
-											<span class="templates-examples-text">Продуктовый лендинг<br> приложения для IOS и Android</span>
-										</h3>
+										<h3 class="templates-examples-title">	
+											<p class="templates-examples-heading">PINK APP</p><br>
+											<p class="templates-examples-text">Продуктовый лендинг<br> приложения для IOS и Android</p>
+											<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+										</h3 class="templates-examples-title">
 								</a>
-									<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+									
 							</li>
 
 							<li class="templates-examples-item">
 								<a href="#">
 									<img class="templates-examples-catalog-img" src="img/img-barbershop.png" width="360" height="576" alt="превью шаблона Барбершоп Бородинский">
-										<h3>	
-											<span class="templates-examples-heading">BARBERSHOP</span><br>
-											<span class="templates-examples-text">Сайт салона красоты.<br> Для мужчин, да.</span>
-										</h3>
+										<h3 class="templates-examples-title">	
+											<p class="templates-examples-heading">BARBERSHOP</p><br>
+											<p class="templates-examples-text">Сайт салона красоты.<br> Для мужчин, да.</p>
+											<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+
+										</h3 class="templates-examples-title">
 								</a>
-									<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+									
 							</li>
 
 							<li class="templates-examples-item">	
 									<a href="#">
 										<img class="templates-examples-catalog-img" src="img/img-mishka.png" width="360" height="576" alt="превью шаблона Мишки">
-										<h3>	
-											<span class="templates-examples-heading">MISHKA</span><br>
-											<span class="templates-examples-text">Интернет-магазин<br> вязаных игрушек</span>
-										</h3>
+										<h3 class="templates-examples-title">	
+											<p class="templates-examples-heading">MISHKA</p><br>
+											<p class="templates-examples-text">Интернет-магазин<br> вязаных игрушек</p>
+											<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+										</h3 class="templates-examples-title">
 									</a>
-									<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+									
 							</li>
 
 							<li class="templates-examples-item">
 								<a href="#">
 									<img class="templates-examples-catalog-img" src="img/img-aplus.png" width="360" height="576" alt="превью шаблона Аплюс">
-										<h3>	
-											<span class="templates-examples-heading">A PLUS</span><br>
-											<span class="templates-examples-text">Лендинг курсов повышения<br> квалификации</span>
-										</h3>
+										<h3 class="templates-examples-title">	
+											<p class="templates-examples-heading">A PLUS</p><br>
+											<p class="templates-examples-text">Лендинг курсов повышения<br> квалификации</p>
+											<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+										</h3 class="templates-examples-title">
 									</a>
-									<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+									
 							</li>
 							
 							<li class="templates-examples-item">
 								<a href="#">
 									<img class="templates-examples-catalog-img" src="img/img-kvast.png" width="360" height="576" alt="превью шаблона Кваст">
-										<h3>	
-											<span class="templates-examples-heading">КВАСТ</span><br>
-											<span class="templates-examples-text">Промо-сайт производителя<br> крафтового кваса</span>
-										</h3>
+										<h3 class="templates-examples-title">	
+											<p class="templates-examples-heading">КВАСТ</p><br>
+											<p class="templates-examples-text">Промо-сайт производителя<br> крафтового кваса</p>
+											<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+										</h3 class="templates-examples-title">
 									</a>
-									<p class="red templates-examples-price"><b>9 900 Руб.</b><a class="order-button visually-hidden" href="#">Купить</a></p>
+									
 							</li>
 
 						
