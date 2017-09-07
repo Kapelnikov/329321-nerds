@@ -38,58 +38,57 @@
 		
 			<section class="template-filters">
 				<h2 class="visually-hidden">Фильтр шаблонов</h2>	
-					<form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
-						<fieldset class="cost">
-            				
-            				<legend>Стоимость:</legend>
-								<div class="range-filter">
-        							<div class="range-controls">
-         							 	<div class="scale">
-            								<div class="bar" style="margin-left: 20%; width: 30%"></div>
-          								</div>
+					<div class="filter">
+				
+					
+						<form class="filter-form" action="get">
+							<div class="wrapper-filter-range">
+						<p class="cost-title">Стоимость:</p>
+								<fieldset class="cost">
+									<div class="range-filter">
+        								<div class="range-controls">
+         							 		<div class="scale">
+            									<div class="bar" style="margin-left: 20%; width: 30%"></div>
+          									</div>
           								<div class="toggle toggle-min"></div>
-         								 <div class="toggle toggle-max"></div>
-       						 		</div>
-        						<div class="price-controls">
-          							<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-          							<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
-        						</div>
-     					 		</div>
-						
-
+         								<div class="toggle toggle-max"></div>
+       						 			</div>
+        							
+        								<div class="price-controls">
+          									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          									<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        								</div>
+     					 			</div>
 						</fieldset>
-          
-						<fieldset class="layout">
-            				<legend>Сетка:</legend>
-            					<ul class="filter-option-list">
-              						<li>
-                						<input class="filter-input filter-input-radio" type="radio" name="layout-type" id="adaptive" checked><label for="adaptive">Адаптивная</label></li>
-              						<li>
-               							<input class="filter-input filter-input-radio" type="radio" name="layout-type" id="fixed"><label for="fixed">Фиксированная</label></li>
-              						<li>
-                						<input class="filter-input filter-input-radio" type="radio" name="layout-type" id="rubber"><label for="rubber">Резиновая</label></li>
-            					</ul>
-          				</fieldset>
 
-
-          				<fieldset class="addons">
-            				<legend>Особенности:</legend>
-            					<ul class="filter-option-list">
-             						 <li>
-                						<input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label></li>
-             						 <li>
-               							 <input class="filter-input filter-input-checkbox" type="checkbox" name="advantages" id="advantages"><label for="advantages">Блок преимуществ</label></li>
-              						<li>
-                						<input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="news" checked><label for="news">Новости</label></li>
-              						<li>
-                						<input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="gallery"><label for="gallery">Галерея</label></li>
-             						 <li>
-                						<input class="filter-input filter-input-checkbox" type="checkbox" name="cart" id="cart"><label for="cart">Корзина</label></li>
-            					</ul>
-          				</fieldset>
-          
-          				<button type="submit" class="grey filter-button">Показать</button>
-        			</form>
+					</div>
+					<fieldset class="filter-radio">
+						<legend>Сетка:</legend>
+						<input class="visually-hidden" id="adaptive" type="radio"  name="grid-type" checked>
+						<label for="adaptive"><span></span>Адаптивная</label>
+						<input class="visually-hidden" id="fix" type="radio" name="grid-type">
+						<label for="fix"><span></span>Фиксированная</label>
+						<input class="visually-hidden" id="rubbery" type="radio" name="grid-type">
+						<label for="rubbery"><span></span>Резиновая</label>
+					</fieldset>
+					
+					<fieldset class="filter-checkbox">
+						
+						<legend>Особенности:</legend>
+						<input class="visually-hidden" type="checkbox" id="slider" name="checkbox-slider" checked/>
+						<label for="slider"><span></span>Слайдер</label>
+						<input class="visually-hidden" type="checkbox" id="features" name="checkbox-features"/>
+						<label for="features"><span></span>Блок преимуществ</label>
+						<input class="visually-hidden" type="checkbox" id="news" name="checkbox-news" checked/>
+						<label for="news"><span></span>Новости</label>
+						<input class="visually-hidden" type="checkbox" id="gallery" name="checkbox-gallery"/>
+						<label for="gallery"><span></span>Галерея</label>
+						<input class="visually-hidden" type="checkbox" id="cart" name="checkbox-cart"/>
+						<label for="cart"><span></span>Корзина</label>
+					</fieldset>
+					<button class="form-btn form-btn--grey" type="submit">Показать</button>
+				</form>
+			</div>
 			</section>
 	
 			<section class="templates-examples">
@@ -203,7 +202,61 @@
 			</section>
 		</div>
 	</main>
-	
+		<footer class="page-footer page-footer-inner">
+		<div class="contact-map">
+			<img class="client-marker" src="img/map-marker.png" width="231" height="190" alt="маркер на карте студии Нёрдс">
+				<div class="company-adress">
+					<p class="footer-company-title">Nёrds design studio</p>
+					<p class="footer-company-text">191186, Санкт-Перербург, <br>
+				ул. Б. Конюшенная, д. 19/8</p>
+					<p class="footer-company-tel">тел. +7(812) 275-75-75</p>
+						
+						<a class="footer-btn" href="#"><p class="red footer-company-btn">Напишите нам</p></a>
+				</div>
+		</div>
+
+		<div class="write-us-form-wrapper">
+			<p class="write-us-form-heading">Напишите нам</p>
+
+				<form action="https://htmlacademy.ru/" method="post" class="write-us-form">
+						
+					<p class= "write-us-form-item">
+						<label for="name">Ваше имя:</label>
+						<input type="text" id="name" name="name" placeholder="Представьтесь пожалуйста">
+					</p>
+					<p class= "write-us-form-item">
+						<label for="email">Ваш email:</label>
+						<input type="email" id="email" name="name" placeholder="Для отправки ответа">
+					</p>
+					<p class= "write-us-form-textarea">
+						<label for="message">Текст письма:</label>
+						<textarea id="message" placeholder="В свободной форме"></textarea>
+					</p>
+							
+					<button class="write-us-form-btn red" type="submit">Отправить</button>
+						
+				</form>
+					
+					
+					<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+		</div>
+							
+
+		<div class="social-sites">
+			<div class="social-buttons-container">
+				<ul class="social-buttons-list">
+					<li><a class="social-buttons-vk" href="#"><span class="visually-hidden">вКонтакте</span></a></li>
+					<li><a class="social-buttons-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+					<li><a class="social-buttons-insta" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+				</ul>
+			</div>
+			<div class="social-discount">
+				<p class="social-discount-title">Давайте дружить, это выгодно!<br>
+				<span class="social-discount-text">Cкидка 10% для друзей из социальных сетей.</span></p>
+			</div>
+		</div>
+	</footer>
 	</div>
+	<script src="js/script.js"></script>	
   </body>
 </html>

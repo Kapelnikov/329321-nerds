@@ -14,12 +14,13 @@ modalBtnOpen.addEventListener("click", function(evt) {
 modalBtnClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalModalPopup.classList.remove("write-us-form-wrapper-show");
+  modalModalPopup.classList.remove("write-us-error");
 });
 
 modalForm.addEventListener("submit", function(evt) {
 	if (!modalFocus.value) {
 		evt.preventDefault();
-		document.write("Введите пжста имя");
+		modalModalPopup.classList.add("write-us-error");
 	} else {
 		localStorage.setItem("name", modalFocus.value);
 	}
