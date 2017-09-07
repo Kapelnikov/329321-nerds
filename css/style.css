@@ -1222,6 +1222,9 @@ textarea::placeholder {
     opacity: 1;
 }
 
+.templates-examples-list:hover ~ .templates-examples-title {
+    outline: 2px solid;
+}
 
 
 .templates-examples-title {
