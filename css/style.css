@@ -50,7 +50,7 @@ input[type='radio'].visually-hidden {
 
     border: 0;
 
-    pisition: absolute;
+    position: absolute;
     clip-path: inset(100%);
 }
 
@@ -812,13 +812,17 @@ input[type='radio'].visually-hidden {
     
     display: none;
     position: fixed;
+    top: 10px;
+    left: 180px;
 
+    z-index: 1000;
     width: 958px;
     height: 589px;
     margin-top: 12px;
     margin-left: 36px;
     padding: .1px;
-
+    
+    background-color: white;
     border: .1px solid white;
     box-shadow: 0 20px 40px rgba(0,1,1,.75);
 }
@@ -947,6 +951,7 @@ textarea::placeholder {
 .modal-close {
     border: none;
     background-color: white;
+    outline: none;
 }
 
 .modal-close::before {
@@ -1091,10 +1096,142 @@ textarea::placeholder {
 /* конец стилизации фильтра цены */
 
 
-.template-filters {
-    width: 260px;
+.filter-option-list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.filter-option-list li {
+    margin: 0;
+    padding: 0;
+    padding: 12px;
+
+}
+
+.filter-option-list label {
+   
+    display: block;
+
+   
+}
+
+
+input[type='checkbox'],
+input[type='radio'] {
+    display: none;
+}
+
+input[type='checkbox'] + label,
+input[type='radio'] + label {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+input[type='checkbox'] + label::before {
+    display: inline-block;
+
+    width: 28px;
+    height: 24px;
+
+
+    content: '';
+
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
 
     
+
+   
+}
+
+input[type='radio'] + label::before {
+    display: inline-block;
+
+    width: 28px;
+    height: 25px;
+    margin: 0 4px 0 0;
+
+    content: '';
+
+    background-image: url(../img/radio-off.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+
+   
+}
+
+
+
+input[type="checkbox"]:checked + label {
+    background-image: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
+    opacity: 1;
+    
+}
+
+input[type="radio"]:checked + label {
+    background-image: url(../img/radio-on.svg);
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+input[type='radio'] + label:hover,
+input[type="checkbox"] + label:hover {
+    opacity: 1;
+}
+
+
+
+input[type='radio'] + label::before:focus,
+input[type="checkbox"] + label::before:focus {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+
+}
+
+
+.cost {
+    border: none;
+
+}
+
+.layout {
+    margin-top: 2px;
+         
+    border: none;
+    
+}
+
+.addons {
+    border: none;
+    
+}
+
+
+.filter-button {
+    font-size: 16px;
+    font-weight: bold;
+
+    width: 260px;
+    margin-top: 15px;
+    
+    padding-top: 16px;
+    padding-right: 89px;
+    padding-bottom: 16px;
+    padding-left: 89px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.template-filters {
+    width: 260px; 
 }
 
 .filter-form {
@@ -1247,7 +1384,7 @@ textarea::placeholder {
     
     list-style: none;
 
-    height: 
+ 
 }
 
 .templates-examples-item {
@@ -1419,129 +1556,7 @@ textarea::placeholder {
 
 
 
-.filter-option-list {
-    margin: 0;
-    padding: 0;
 
-    list-style: none;
-}
-
-.filter-option-list li {
-    margin: 0;
-    padding: 0;
-    padding: 12px;
-
-}
-
-.filter-option-list label {
-   
-    display: block;
-
-   
-}
-
-
-input[type='checkbox'],
-input[type='radio'] {
-    display: none;
-}
-
-input[type='checkbox'] + label,
-input[type='radio'] + label {
-    cursor: pointer;
-    opacity: 0.4;
-}
-
-input[type='checkbox'] + label::before {
-    display: inline-block;
-
-    width: 28px;
-    height: 24px;
-
-
-    content: '';
-
-    background-image: url(../img/checkbox-off.svg);
-    background-repeat: no-repeat;
-
-    
-
-   
-}
-
-input[type='radio'] + label::before {
-    display: inline-block;
-
-    width: 28px;
-    height: 25px;
-    margin: 0 4px 0 0;
-
-    content: '';
-
-    background-image: url(../img/radio-off.svg);
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-
-   
-}
-
-
-
-input[type="checkbox"]:checked + label {
-    background-image: url(../img/checkbox-on.svg);
-    background-repeat: no-repeat;
-    opacity: 1;
-}
-
-input[type="radio"]:checked + label {
-    background-image: url(../img/radio-on.svg);
-    background-repeat: no-repeat;
-    opacity: 1;
-}
-
-input[type='radio'] + label:hover,
-input[type="checkbox"] + label:hover {
-    opacity: 1;
-}
-
-
-
-.cost {
-    border: none;
-
-}
-
-.layout {
-    margin-top: 2px;
-         
-    border: none;
-    
-}
-
-.addons {
-    border: none;
-    
-}
-
-
-.filter-button {
-    font-size: 16px;
-    font-weight: bold;
-
-    width: 260px;
-    margin-top: 15px;
-    
-    padding-top: 16px;
-    padding-right: 89px;
-    padding-bottom: 16px;
-    padding-left: 89px;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    border: none;
-    border-radius: 3px 3px 3px 3px;
-}
 
 .pagination-wrapper {
     display: flex;
