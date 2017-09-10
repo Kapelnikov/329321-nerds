@@ -58,7 +58,8 @@ input[type='radio'].visually-hidden {
 
 .page-container {
     width: 1440px;
-    
+    margin: 0 auto;
+   
 }
 
 .page-header {
@@ -1262,6 +1263,17 @@ textarea::placeholder {
      flex-direction: column;
 }
 
+.label-adaptive {
+    
+    margin-top: 3px;
+}
+
+.label-slider {
+
+       margin-top: 6px;
+
+}
+
 .filter-checkbox {
     font-size: 16px;
     font-weight: 400;
@@ -1279,7 +1291,12 @@ textarea::placeholder {
 
     color: #283136;
     border: none;
+    margin-top: 35px;
 }
+
+
+
+
 
 /* начало стилизации фильтра цены */
 
@@ -1652,6 +1669,12 @@ input[type='checkbox'] + label span:hover {
     margin-top: 73px;
 }
 
+.templates-examples-item:hover {
+    box-shadow: 0 6px 15px rgba(0,1,1,0.25);
+}
+
+
+
 .templates-examples-item::before {
     position: absolute;
     top: -39px;
@@ -1660,9 +1683,7 @@ input[type='checkbox'] + label span:hover {
     height: 40px;
 
     content: '';
-    -webkit-transition-duration: .5s;
-         -o-transition-duration: .5s;
-            transition-duration: .5s;
+  
 
     opacity: .12;
     background-image: url('../img/browser.svg');
@@ -1672,10 +1693,12 @@ input[type='checkbox'] + label span:hover {
 
 .templates-examples-item:hover::before {
     opacity: 1;
+    box-shadow: 0 6px 15px rgba(0,1,1,0.25);
 }
 
 .templates-examples-item:hover .templates-examples-title {
     opacity: 1;
+    top: 339px;
 }
 
 
@@ -1687,9 +1710,7 @@ input[type='checkbox'] + label span:hover {
     height: 231px;
     padding-top: 13px;
 
-    -webkit-transition-duration: .5s;
-         -o-transition-duration: .5s;
-            transition-duration: .5s;
+   
     text-align: center;
 
     opacity: 0;
