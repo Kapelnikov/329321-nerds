@@ -58,7 +58,7 @@ input[type='radio'].visually-hidden {
 
 .page-container {
     width: 1440px;
-    margin: 0 auto;
+    
 }
 
 .page-header {
@@ -1238,6 +1238,8 @@ textarea::placeholder {
     padding: -1px;
 
     border: none;
+
+     flex-direction: column;
 }
 
 .filter-radio {
@@ -1256,6 +1258,8 @@ textarea::placeholder {
 
     color: #283136;
     border: none;
+
+     flex-direction: column;
 }
 
 .filter-checkbox {
@@ -1464,6 +1468,10 @@ input[type='checkbox'] + label span:hover {
     margin-top: 22px;
 }
 
+.filter-form fieldset {
+    flex-direction: column;
+}
+
 .filter-form legend {
     font-size: 18px;
     font-weight: bold;
@@ -1519,7 +1527,7 @@ input[type='checkbox'] + label span:hover {
 
     text-transform: uppercase;
 
-    outline: 2px solid red;
+   
 }
 
 .template-examples-sort-list li {
