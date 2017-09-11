@@ -34,7 +34,6 @@ img {
     border: 0;
 }
 
-
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
@@ -59,7 +58,13 @@ input[type='radio'].visually-hidden {
 .page-container {
     width: 1440px;
     margin: 0 auto;
-   
+}
+
+.page-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    outline: 2px solid;
 }
 
 .page-header {
@@ -82,7 +87,6 @@ input[type='radio'].visually-hidden {
     margin-left: 65px;
 }
 
-
 .page-logo-image:hover {
     opacity: .8;
 }
@@ -90,7 +94,6 @@ input[type='radio'].visually-hidden {
 .page-logo-image:active {
     opacity: .3;
 }
-
 
 .site-navigation {
     display: -webkit-box;
@@ -237,7 +240,7 @@ input[type='radio'].visually-hidden {
 
 .slider-controls label {
     display: inline-block;
-
+    position: relative;
     width: 13px;
     height: 13px;
     margin: 0 6px;
@@ -250,10 +253,27 @@ input[type='radio'].visually-hidden {
     background: white;
 }
 
-#btn-1:checked ~ .slider-controls label[for='btn-1'],
-#btn-2:checked ~ .slider-controls label[for='btn-2'],
-#btn-3:checked ~ .slider-controls label[for='btn-3'] {
-    background: #c1c1c1;
+.slider-controls label:before {
+    position: absolute;
+    left: 2.56px;
+    top: 2px;
+
+    width: 8px;
+    height: 8px;
+
+    content: '';
+
+    background-image: url('../img/active-button.png');
+    background-repeat: no-repeat;
+    background-position: 2 2;
+    opacity: 0  ;
+
+}
+
+#btn-1:checked ~ .slider-controls label[for='btn-1']:before,
+#btn-2:checked ~ .slider-controls label[for='btn-2']:before,
+#btn-3:checked ~ .slider-controls label[for='btn-3']:before {
+    opacity: 1;
 }
 
 .slide {
@@ -311,8 +331,6 @@ input[type='radio'].visually-hidden {
     border-radius: 3px;
     background: #fb565a;
 }
-
-
 
 .slide:nth-child(1) {
     background-image: url('../img/slide1.png');
@@ -411,7 +429,6 @@ input[type='radio'].visually-hidden {
     color: #fff;
 }
 
-
 .company-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -453,7 +470,6 @@ input[type='radio'].visually-hidden {
     color: #000;
 }
 
-
 .company-info-text {
     font-size: 16px;
     font-weight: normal;
@@ -473,7 +489,6 @@ input[type='radio'].visually-hidden {
 
     color: #000;
 }
-
 
 .company-info-item {
     font-size: 16px;
@@ -532,15 +547,12 @@ input[type='radio'].visually-hidden {
     vertical-align: super;
 }
 
-
-
 .company-merits-numerals {
     font-size: 45px;
     font-weight: bold;
 
     color: #000;
 }
-
 
 .company-merits-facts {
     font-size: 16px;
@@ -575,7 +587,6 @@ input[type='radio'].visually-hidden {
     align-items: center;
 }
 
-
 .company-clients-list-item {
     position: relative;
 
@@ -585,8 +596,6 @@ input[type='radio'].visually-hidden {
     margin-bottom: 104px;
     padding: 0;
 }
-
-
 
 .company-clients-list-item a {
     margin: 0 auto;
@@ -631,8 +640,6 @@ input[type='radio'].visually-hidden {
     background-color: #eee;
 }
 
-
-
 .company-clients-list a {
     opacity: .2;
 }
@@ -644,8 +651,6 @@ input[type='radio'].visually-hidden {
 .company-clients-list a:active {
     opacity: .1;
 }
-
-
 
 .page-footer {
     margin-top: 81px;
@@ -696,7 +701,6 @@ input[type='radio'].visually-hidden {
     color: #666;
 }
 
-
 .footer-company-btn {
     font-size: 16px;
     font-weight: 500;
@@ -719,8 +723,6 @@ input[type='radio'].visually-hidden {
 .footer-company-btn a {
     color: #fff;
 }
-
-
 
 .contact-map {
     position: relative;
@@ -753,10 +755,6 @@ input[type='radio'].visually-hidden {
     -ms-flex-align: center;
     align-items: center;
 }
-
-
-
-
 
 .social-buttons-list {
     display: -webkit-box;
@@ -1009,7 +1007,6 @@ input[type='radio'].visually-hidden {
     justify-content: space-between;
 }
 
-
 .write-us-form-heading {
     font-size: 45px;
     font-weight: 500;
@@ -1047,7 +1044,6 @@ input[type='radio'].visually-hidden {
 .write-us-form-btn a {
     color: #fff;
 }
-
 
 .write-us-form label {
     font-size: 16px;
@@ -1117,9 +1113,6 @@ textarea::placeholder {
     opacity: .5;
 }
 
-
-
-
 .write-us-form-item input[type='text']:hover,
 .write-us-form-item input[type='email']:hover,
 .write-us-form-textarea textarea:hover {
@@ -1137,8 +1130,6 @@ textarea::placeholder {
     color: #e74246;
     border-color: #e74246;
 }
-
-
 
 .modal-close {
     border: none;
@@ -1177,8 +1168,6 @@ textarea::placeholder {
     outline-color: #d7373b;
 }
 
-
-
 /* уникальные стили внутренней */
 
 .main-heading {
@@ -1208,8 +1197,6 @@ textarea::placeholder {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-
-
 
 .filter {
     font-size: 16px;
@@ -1264,14 +1251,11 @@ textarea::placeholder {
 }
 
 .label-adaptive {
-    
     margin-top: 3px;
 }
 
 .label-slider {
-
        margin-top: 6px;
-
 }
 
 .filter-checkbox {
@@ -1293,10 +1277,6 @@ textarea::placeholder {
     border: none;
     margin-top: 35px;
 }
-
-
-
-
 
 /* начало стилизации фильтра цены */
 
@@ -1389,7 +1369,6 @@ textarea::placeholder {
 }
 
 /* конец стилизации фильтра цены */
-
 
 input[type='checkbox'] + label span {
     display: inline-block;
@@ -1543,8 +1522,6 @@ input[type='checkbox'] + label span:hover {
     list-style: none;
 
     text-transform: uppercase;
-
-   
 }
 
 .template-examples-sort-list li {
@@ -1553,7 +1530,6 @@ input[type='checkbox'] + label span:hover {
 
 .template-examples-sort-list li:nth-child(1) {
    
-    
 }
 
 .template-examples-sort-list li:nth-child(2) {
@@ -1566,12 +1542,10 @@ input[type='checkbox'] + label span:hover {
     margin-left: 16px;
 }
 
-
 .template-examples-sort-list a {
     display: block;
 
     margin-top: 23px;
-    
 }
 
 
@@ -1593,8 +1567,6 @@ input[type='checkbox'] + label span:hover {
     opacity: 1;
     color: #000;
 }
-
-
 
 .template-examples-sort-up::before {
     position: absolute;
@@ -1673,8 +1645,6 @@ input[type='checkbox'] + label span:hover {
     box-shadow: 0 6px 15px rgba(0,1,1,0.25);
 }
 
-
-
 .templates-examples-item::before {
     position: absolute;
     top: -39px;
@@ -1684,7 +1654,6 @@ input[type='checkbox'] + label span:hover {
 
     content: '';
   
-
     opacity: .12;
     background-image: url('../img/browser.svg');
     background-repeat: no-repeat;
@@ -1701,20 +1670,20 @@ input[type='checkbox'] + label span:hover {
     top: 339px;
 }
 
-
 .templates-examples-title {
     position: absolute;
     top: 332px;
 
     width: 360px;
-    height: 231px;
+    min-height: 231px;
     padding-top: 13px;
 
    
     text-align: center;
 
-    opacity: 0;
+    opacity: 1;
     background-color: #eee;
+
 }
 
 .templates-examples-title:hover {
@@ -1729,6 +1698,10 @@ input[type='checkbox'] + label span:hover {
     text-transform: uppercase;
 
     color: #000;
+}
+
+.catalog-link {
+    color: #000000;
 }
 
 .templates-examples-text {
@@ -1747,6 +1720,7 @@ input[type='checkbox'] + label span:hover {
     width: 82px;
     margin: 0 auto;
     margin-top: 32px;
+    margin-bottom: 43px;
     padding-top: 15px;
     padding-right: 60px;
     padding-bottom: 15px;
@@ -1763,13 +1737,9 @@ input[type='checkbox'] + label span:hover {
     color: #fff;
 }
 
-
-
-
 .red {
     background-color: #fb565a;
 }
-
 
 .red:hover {
     cursor: pointer;
@@ -1783,8 +1753,6 @@ input[type='checkbox'] + label span:hover {
     -webkit-box-shadow: 0 -3px 0 rgba(0,1,1,.1);
             box-shadow: 0 -3px 0 rgba(0,1,1,.1);
 }
-
-
 
 .green {
     background-color: #00ca74;
@@ -1803,7 +1771,6 @@ input[type='checkbox'] + label span:hover {
             box-shadow: 0 -3px 0 rgba(0,1,1,.1);
 }
 
-
 .yellow {
     background-color: #efc84a;
 }
@@ -1820,10 +1787,6 @@ input[type='checkbox'] + label span:hover {
             box-shadow: 0 -3px 0 rgba(0,1,1,.1);
 }
 
-
-
-
-
 .pagination-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1836,7 +1799,6 @@ input[type='checkbox'] + label span:hover {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-
 
 .pagination-list {
     display: -webkit-box;
@@ -1875,7 +1837,6 @@ input[type='checkbox'] + label span:hover {
     color: black;
 }
 
-
 .pagination-btn {
     font-size: 16px;
     font-weight: bold;
@@ -1904,11 +1865,9 @@ input[type='checkbox'] + label span:hover {
     background-color: #fff;;
 }
 
-
 .pagination-item:hover:not(.pagination-item-current) {
     background-color: #dfdfdf;
 }
-
 
 .pagination-item:active:not(.pagination-item-current) {
     border-top: none;
@@ -1917,12 +1876,9 @@ input[type='checkbox'] + label span:hover {
             box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1);
 }
 
-
-
 .grey {
     background-color: #eee;
 }
-
 
 .grey:hover {
     cursor: pointer;
@@ -1935,8 +1891,6 @@ input[type='checkbox'] + label span:hover {
     -webkit-box-shadow: 0 -3px 0 rgba(0,1,1,.1);
             box-shadow: 0 -3px 0 rgba(0,1,1,.1);
 }
-
-
 
 .template-examples-heading {
     font-size: 18px;

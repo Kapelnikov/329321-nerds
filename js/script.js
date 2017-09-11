@@ -1,7 +1,7 @@
-var modalBtnOpen = document.querySelector('.footer-btn');
-var modalBtnClose = document.querySelector('.modal-close');
-var modalModalPopup = document.querySelector('.write-us-form-wrapper');
-var modalFocus = modalModalPopup.querySelector('[name=name]');
+var modalBtnOpen = document.querySelector(".footer-btn");
+var modalBtnClose = document.querySelector(".modal-close");
+var modalModalPopup = document.querySelector(".write-us-form-wrapper");
+var modalFocus = modalModalPopup.querySelector("[name=name]");
 var modalForm = modalModalPopup.querySelector("form");
 var storage = localStorage.getItem("name");
 
