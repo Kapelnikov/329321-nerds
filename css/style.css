@@ -1,4 +1,8 @@
 
+html {
+ overflow-x: hidden;
+}
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
@@ -60,12 +64,7 @@ input[type='radio'].visually-hidden {
     margin: 0 auto;
 }
 
-.page-wrapper {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    outline: 2px solid;
-}
+
 
 .page-header {
     display: -webkit-box;
@@ -82,9 +81,13 @@ input[type='radio'].visually-hidden {
 
 .page-logo-image {
     display: block;
+    margin-top: -6px;
+    
+    margin-left: 66px;
+}
 
-    margin-bottom: 5px;
-    margin-left: 65px;
+.page-logo-image-inner {
+    margin-top: 6px;
 }
 
 .page-logo-image:hover {
@@ -255,8 +258,8 @@ input[type='radio'].visually-hidden {
 
 .slider-controls label:before {
     position: absolute;
-    left: 2.56px;
-    top: 2px;
+    right: 3px;
+    top: 3px;
 
     width: 8px;
     height: 8px;
@@ -266,7 +269,7 @@ input[type='radio'].visually-hidden {
     background-image: url('../img/active-button.png');
     background-repeat: no-repeat;
     background-position: 2 2;
-    opacity: 0  ;
+    opacity: 0;
 
 }
 
@@ -300,7 +303,7 @@ input[type='radio'].visually-hidden {
     font-size: 55px;
     font-weight: 500;
     line-height: 55px;
-
+    margin-top: 2px;
     color: black;
 }
 
@@ -320,7 +323,7 @@ input[type='radio'].visually-hidden {
     display: block;
 
     width: 240px;
-    margin-top: 41px;
+    margin-top: 38px;
     padding: 15px 0;
 
     text-align: center;
@@ -341,7 +344,7 @@ input[type='radio'].visually-hidden {
 .slide:nth-child(2) {
     background-image: url('../img/slide2.png');
     background-repeat: no-repeat;
-    background-position: 495px 0;
+    background-position: 495px -10px;
 }
 .slide:nth-child(3) {
     background-image: url('../img/slide3.png');
@@ -730,7 +733,7 @@ input[type='radio'].visually-hidden {
     height: 416px;
 
     background-image: url('../img/layer-map.jpg'); /* подложка под фрейм карты */
-    background-position: 40% 40%;
+    background-position: 50% 42%;
 }
 
 .client-marker {
@@ -779,7 +782,7 @@ input[type='radio'].visually-hidden {
     width: 78px;
     height: 78px;
     margin: 0;
-    margin-left: 14px;
+    margin-left: 13px;
 
     border-radius: 50px;
     background: #e1e1e1;
@@ -870,7 +873,7 @@ input[type='radio'].visually-hidden {
     position: fixed;
     z-index: 1000;
     top: 0;
-    right: 0;
+    right: -90px;
     bottom: 0;
     left: 0;
 
@@ -1057,8 +1060,8 @@ input[type='radio'].visually-hidden {
 .write-us-form input {
     display: block;
 
-    width: 340px;
-    height: 49px;
+    width: 342px;
+    height: 43px;
     padding-left: 14px;
 
     border: 2px solid #d7dcde;
@@ -1139,8 +1142,8 @@ textarea::placeholder {
 
 .modal-close::before {
     position: absolute;
-    top: 95px;
-    left: 885px;
+    top: 80px;
+    left: 850px;
 
     display: block;
 
@@ -1217,7 +1220,7 @@ textarea::placeholder {
 .cost-title {
     font-size: 18px;
     font-weight: bold;
-
+    margin-left: 1px;
     text-transform: uppercase;
 }
 
@@ -1254,9 +1257,30 @@ textarea::placeholder {
     margin-top: 3px;
 }
 
+.label-fix {
+    margin-top: 3px;
+}
+
+.label-rubbery {
+    margin-top: 3px;
+}
+
 .label-slider {
        margin-top: 6px;
 }
+
+.label-news {
+    margin-top: 4px;
+}
+
+.label-gallery {
+    margin-top: 1px;
+}
+
+.label-cart {
+    margin-top: 2px;
+}
+
 
 .filter-checkbox {
     font-size: 16px;
@@ -1269,13 +1293,13 @@ textarea::placeholder {
 
     width: 200px;
     margin: 0;
-    margin-top: 42px;
-    margin-bottom: 52px;
+    margin-bottom: 40px;
+    margin-top: 30px;
     padding: 0;
 
     color: #283136;
     border: none;
-    margin-top: 35px;
+   
 }
 
 /* начало стилизации фильтра цены */
@@ -1305,16 +1329,16 @@ textarea::placeholder {
 }
 
 .range-controls .bar {
-    width: 70%;
+    width: 110px;
     height: 2px;
-
     background: #00ca74;
+    
 }
 
 .range-controls .toggle {
     position: absolute;
     top: 30px;
-    left: 0;
+    left: 20px;
 
     width: 4px;
     height: 4px;
@@ -1329,11 +1353,11 @@ textarea::placeholder {
 }
 
 .range-controls .toggle-min {
-    left: 50px;
+    left: 14px;
 }
 
 .range-controls .toggle-max {
-    left: 110px;
+    left: 155px;
 }
 
 .price-controls {
@@ -1348,8 +1372,13 @@ textarea::placeholder {
     width: 50%;
 }
 
+.min-price {
+    margin-left: -3px;
+}
+
 .max-price {
     text-align: right;
+    margin-left: -3px;
 }
 
 .price-controls input {
@@ -1366,6 +1395,8 @@ textarea::placeholder {
     border: none;
     border-radius: 5px;
     background: #f1f1f1;
+
+    
 }
 
 /* конец стилизации фильтра цены */
@@ -1501,7 +1532,7 @@ input[type='checkbox'] + label span:hover {
     font-weight: bold;
 
     width: 360px;
-    margin-top: 23px;
+    margin-top: 20px;
 
     text-transform: uppercase;
 }
@@ -1509,7 +1540,7 @@ input[type='checkbox'] + label span:hover {
 .template-examples-sort-list {
     font-size: 14px;
     font-weight: normal;
-
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1529,17 +1560,18 @@ input[type='checkbox'] + label span:hover {
 }
 
 .template-examples-sort-list li:nth-child(1) {
-   
+   position: relative;
+    left: 400px;
 }
 
 .template-examples-sort-list li:nth-child(2) {
-   
-    margin-left: 20px;
+   position: relative;
+    left: 425px;
 }
 
 .template-examples-sort-list li:nth-child(3) {
-   
-    margin-left: 16px;
+   position: relative;
+    left: 450px;
 }
 
 .template-examples-sort-list a {
@@ -1638,7 +1670,8 @@ input[type='checkbox'] + label span:hover {
     position: relative;
 
     width: 360px;
-    margin-top: 73px;
+    margin-top: 75px;
+
 }
 
 .templates-examples-item:hover {
@@ -1667,12 +1700,12 @@ input[type='checkbox'] + label span:hover {
 
 .templates-examples-item:hover .templates-examples-title {
     opacity: 1;
-    top: 339px;
+    top: 347px;
 }
 
 .templates-examples-title {
     position: absolute;
-    top: 332px;
+    top: 347px;
 
     width: 360px;
     min-height: 231px;
@@ -1681,7 +1714,7 @@ input[type='checkbox'] + label span:hover {
    
     text-align: center;
 
-    opacity: 1;
+    opacity: 0;
     background-color: #eee;
 
 }
@@ -1698,6 +1731,8 @@ input[type='checkbox'] + label span:hover {
     text-transform: uppercase;
 
     color: #000;
+
+
 }
 
 .catalog-link {
@@ -1711,6 +1746,8 @@ input[type='checkbox'] + label span:hover {
     margin-top: -20px;
 
     color: #666;
+
+    margin-top: -16px;
 }
 
 .templates-examples-price {
@@ -1859,10 +1896,18 @@ input[type='checkbox'] + label span:hover {
 .pagination-item-current {
     width: 44px;
     height: 44px;
-
+    
     border: 3px solid #dbdbdb;
     border-radius: 2px 2px 2px 2px;
-    background-color: #fff;;
+    background-color: #fff;
+    position: relative;
+}
+
+.pagination-item-current a { 
+    text-align: center;
+    left: 17px;
+    bottom: -5px;
+    position: absolute;
 }
 
 .pagination-item:hover:not(.pagination-item-current) {

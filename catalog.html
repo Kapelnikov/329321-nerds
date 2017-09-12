@@ -14,8 +14,9 @@
 
 <body>
 	<div class="page-container">
+		<div class="page-wrapper">
 		<header class="page-header">
-			<a href="index.html"><img alt="логотип студии Нёрдс" class="page-logo-image" src="img/nerds-logo.svg" width="160" height="65">
+			<a href="index.html"><img alt="логотип студии Нёрдс" class="page-logo-image page-logo-image-inner" src="img/nerds-logo.svg" width="160" height="65">
 			</a>
 			<nav class="site-navigation">
 				<ul class="site-navigation-list">
@@ -52,7 +53,7 @@
 									<div class="range-filter">
 										<div class="range-controls">
 											<div class="scale">
-												<div class="bar" style="margin-left: 20%; width: 30%"></div>
+												<div class="bar" style="margin-left: 5%; width: 60%"></div>
 											</div>
 											<div class="toggle toggle-min"></div>
 											<div class="toggle toggle-max"></div>
@@ -73,9 +74,9 @@
 								<input checked class="visually-hidden" id="adaptive" name="grid-type" type="radio">
 								<label class="label-adaptive" for="adaptive"><span></span>Адаптивная</label>
 								<input class="visually-hidden" id="fix" name="grid-type" type="radio">
-								<label for="fix"><span></span>Фиксированная</label>
+								<label class="label-fix" for="fix"><span></span>Фиксированная</label>
 								<input class="visually-hidden" id="rubbery" name="grid-type" type="radio">
-								<label for="rubbery"><span></span>Резиновая</label>
+								<label class="label-rubbery" for="rubbery"><span></span>Резиновая</label>
 							</fieldset>
 							<fieldset class="filter-checkbox">
 								<legend>Особенности:</legend>
@@ -84,11 +85,11 @@
 								<input class="visually-hidden" id="features" name="checkbox-features" type="checkbox">
 								<label for="features"><span></span>Блок преимуществ</label>
 								<input class="visually-hidden" id="news" name="checkbox-news" type="checkbox">
-								<label for="news"><span></span>Новости</label>
+								<label class="label-news" for="news"><span></span>Новости</label>
 								<input class="visually-hidden" id="gallery" name="checkbox-gallery" type="checkbox">
-								<label for="gallery"><span></span>Галерея</label>
+								<label class="label-gallery" for="gallery"><span></span>Галерея</label>
 								<input class="visually-hidden" id="cart" name="checkbox-cart" type="checkbox">
-								<label for="cart"><span></span>Корзина</label>
+								<label class="label-cart" for="cart"><span></span>Корзина</label>
 							</fieldset>
 							<button class="form-btn form-btn--grey" type="submit">Показать</button>
 						</form>
@@ -244,6 +245,7 @@
 				</div>
 			</div>
 		</footer>
+	</div>
 	</div>
 	<script src="js/script.js">
 	</script>
