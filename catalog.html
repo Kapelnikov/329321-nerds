@@ -14,9 +14,10 @@
 
 <body>
 	<div class="page-container">
-		<div class="page-wrapper">
+		
 		<header class="page-header">
-			<a href="index.html"><img alt="логотип студии Нёрдс" class="page-logo-image page-logo-image-inner" src="img/nerds-logo.svg" width="160" height="65">
+			<a href="index.html">
+				<img alt="логотип студии Нёрдс" class="page-logo-image page-logo-image-inner" src="img/nerds-logo.svg" width="160" height="65">
 			</a>
 			<nav class="site-navigation">
 				<ul class="site-navigation-list">
@@ -72,24 +73,24 @@
 							<fieldset class="filter-radio">
 								<legend>Сетка:</legend>
 								<input checked class="visually-hidden" id="adaptive" name="grid-type" type="radio">
-								<label class="label-adaptive" for="adaptive"><span></span>Адаптивная</label>
+								<label class="label-adaptive label-block" for="adaptive"><span></span>Адаптивная</label>
 								<input class="visually-hidden" id="fix" name="grid-type" type="radio">
-								<label class="label-fix" for="fix"><span></span>Фиксированная</label>
+								<label class="label-fix label-block" for="fix"><span></span>Фиксированная</label>
 								<input class="visually-hidden" id="rubbery" name="grid-type" type="radio">
-								<label class="label-rubbery" for="rubbery"><span></span>Резиновая</label>
+								<label class="label-rubbery label-block" for="rubbery"><span></span>Резиновая</label>
 							</fieldset>
 							<fieldset class="filter-checkbox">
 								<legend>Особенности:</legend>
 								<input class="visually-hidden" id="slider" name="checkbox-slider" type="checkbox">
-								<label class="label-slider" for="slider"><span></span>Слайдер</label>
+								<label class="label-slider label-block" for="slider"><span></span>Слайдер</label>
 								<input class="visually-hidden" id="features" name="checkbox-features" type="checkbox">
-								<label for="features"><span></span>Блок преимуществ</label>
+								<label for="features" class="label-block"><span></span>Блок преимуществ</label>
 								<input class="visually-hidden" id="news" name="checkbox-news" type="checkbox">
-								<label class="label-news" for="news"><span></span>Новости</label>
+								<label class="label-news label-block" for="news"><span></span>Новости</label>
 								<input class="visually-hidden" id="gallery" name="checkbox-gallery" type="checkbox">
-								<label class="label-gallery" for="gallery"><span></span>Галерея</label>
+								<label class="label-gallery label-block" for="gallery"><span></span>Галерея</label>
 								<input class="visually-hidden" id="cart" name="checkbox-cart" type="checkbox">
-								<label class="label-cart" for="cart"><span></span>Корзина</label>
+								<label class="label-cart label-block" for="cart"><span></span>Корзина</label>
 							</fieldset>
 							<button class="form-btn form-btn--grey" type="submit">Показать</button>
 						</form>
@@ -246,7 +247,7 @@
 			</div>
 		</footer>
 	</div>
-	</div>
+	
 	<script src="js/script.js">
 	</script>
 </body>

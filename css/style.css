@@ -81,7 +81,7 @@ input[type='radio'].visually-hidden {
 
 .page-logo-image {
     display: block;
-    margin-top: -6px;
+    margin-top: 6px;
     
     margin-left: 66px;
 }
@@ -292,7 +292,7 @@ input[type='radio'].visually-hidden {
 }
 
 .slide-text {
-    width: 514px;
+    width: 518px;
     margin-top: 32px;
     padding: 30px 0;
 
@@ -734,6 +734,7 @@ input[type='radio'].visually-hidden {
 
     background-image: url('../img/layer-map.jpg'); /* подложка под фрейм карты */
     background-position: 50% 42%;
+    background-repeat: no-repeat;
 }
 
 .client-marker {
@@ -1253,6 +1254,10 @@ textarea::placeholder {
      flex-direction: column;
 }
 
+.label-block {
+    display: block;
+}
+
 .label-adaptive {
     margin-top: 3px;
 }
@@ -1328,12 +1333,12 @@ textarea::placeholder {
     background: #d7dcde;
 }
 
-.range-controls .bar {
+/* .range-controls .bar {
     width: 110px;
     height: 2px;
     background: #00ca74;
     
-}
+} */
 
 .range-controls .toggle {
     position: absolute;
