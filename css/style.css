@@ -1,6 +1,6 @@
 
 html {
- overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -64,24 +64,6 @@ input[type='radio'].visually-hidden {
     margin: 0 auto;
 }
 
-.container {
-    margin: 0 auto; 
-    width: 1200px;
-}
-
-.header-container {
-    margin: 0 auto; 
-    width: 1200px;
-    outline: 2px solid red;
-    display: flex;
-
-}
-
-.footer-container {
-    margin: 0 auto; 
-    width: 1200px;
-}
-
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -97,8 +79,8 @@ input[type='radio'].visually-hidden {
 
 .page-logo-image {
     display: block;
+
     margin-top: 6px;
-    
     margin-left: 66px;
 }
 
@@ -258,8 +240,10 @@ input[type='radio'].visually-hidden {
 }
 
 .slider-controls label {
-    display: inline-block;
     position: relative;
+
+    display: inline-block;
+
     width: 13px;
     height: 13px;
     margin: 0 6px;
@@ -274,19 +258,18 @@ input[type='radio'].visually-hidden {
 
 .slider-controls label:before {
     position: absolute;
-    right: 3px;
     top: 3px;
+    right: 3px;
 
     width: 8px;
     height: 8px;
 
     content: '';
 
+    opacity: 0;
     background-image: url('../img/active-button.png');
     background-repeat: no-repeat;
     background-position: 2 2;
-    opacity: 0;
-
 }
 
 #btn-1:checked ~ .slider-controls label[for='btn-1']:before,
@@ -319,7 +302,9 @@ input[type='radio'].visually-hidden {
     font-size: 55px;
     font-weight: 500;
     line-height: 55px;
+
     margin-top: 2px;
+
     color: black;
 }
 
@@ -747,11 +732,11 @@ input[type='radio'].visually-hidden {
     position: relative;
 
     height: 416px;
-    
+
+    background-color: #eee; /* подложка под картинку карты (серый фон) */
     background-image: url('../img/layer-map.jpg'); /* подложка под фрейм карты */
-    background-color: #eee;
-    background-position: 50% 42%;
     background-repeat: no-repeat;
+    background-position: 50% 42%;
 }
 
 .client-marker {
@@ -1238,17 +1223,19 @@ textarea::placeholder {
 .cost-title {
     font-size: 18px;
     font-weight: bold;
+
     margin-left: 1px;
+
     text-transform: uppercase;
 }
 
 .cost {
+    flex-direction: column;
+
     margin-top: -20px;
     padding: -1px;
 
     border: none;
-
-     flex-direction: column;
 }
 
 .filter-radio {
@@ -1259,6 +1246,7 @@ textarea::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
 
     width: 200px;
     margin: 0;
@@ -1267,8 +1255,6 @@ textarea::placeholder {
 
     color: #283136;
     border: none;
-
-     flex-direction: column;
 }
 
 .label-block {
@@ -1288,7 +1274,7 @@ textarea::placeholder {
 }
 
 .label-slider {
-       margin-top: 6px;
+    margin-top: 6px;
 }
 
 .label-news {
@@ -1303,7 +1289,6 @@ textarea::placeholder {
     margin-top: 2px;
 }
 
-
 .filter-checkbox {
     font-size: 16px;
     font-weight: 400;
@@ -1315,13 +1300,12 @@ textarea::placeholder {
 
     width: 200px;
     margin: 0;
-    margin-bottom: 40px;
     margin-top: 30px;
+    margin-bottom: 40px;
     padding: 0;
 
     color: #283136;
     border: none;
-   
 }
 
 /* начало стилизации фильтра цены */
@@ -1353,9 +1337,9 @@ textarea::placeholder {
 .range-controls .bar {
     width: 110px;
     height: 2px;
+
     background: #00ca74;
 }
-
 
 .range-controls .toggle {
     position: absolute;
@@ -1390,10 +1374,10 @@ textarea::placeholder {
     font-size: 16px;
 
     display: inline-block;
-    vertical-align: center;
 
     width: 50%;
 
+    vertical-align: center;
 }
 
 .min-price {
@@ -1401,8 +1385,9 @@ textarea::placeholder {
 }
 
 .max-price {
-    text-align: right;
     margin-left: -3px;
+
+    text-align: right;
 }
 
 .price-controls input {
@@ -1419,8 +1404,6 @@ textarea::placeholder {
     border: none;
     border-radius: 5px;
     background: #f1f1f1;
-
-    
 }
 
 /* конец стилизации фильтра цены */
@@ -1564,7 +1547,9 @@ input[type='checkbox'] + label span:hover {
 .template-examples-sort-list {
     font-size: 14px;
     font-weight: normal;
+
     position: absolute;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1572,29 +1557,24 @@ input[type='checkbox'] + label span:hover {
     width: 260px;
     margin: 0;
     padding: 0;
-    
 
     list-style: none;
 
     text-transform: uppercase;
 }
 
-.template-examples-sort-list li {
-   
-}
-
 .template-examples-sort-list li:nth-child(1) {
-   position: relative;
+    position: relative;
     left: 400px;
 }
 
 .template-examples-sort-list li:nth-child(2) {
-   position: relative;
+    position: relative;
     left: 425px;
 }
 
 .template-examples-sort-list li:nth-child(3) {
-   position: relative;
+    position: relative;
     left: 450px;
 }
 
@@ -1603,7 +1583,6 @@ input[type='checkbox'] + label span:hover {
 
     margin-top: 23px;
 }
-
 
 .template-examples-sort-up-down-container {
     width: 60px;
@@ -1695,11 +1674,10 @@ input[type='checkbox'] + label span:hover {
 
     width: 360px;
     margin-top: 75px;
-
 }
 
 .templates-examples-item:hover {
-    box-shadow: 0 6px 15px rgba(0,1,1,0.25);
+    box-shadow: 0 6px 15px rgba(0,1,1,.25);
 }
 
 .templates-examples-item::before {
@@ -1710,7 +1688,7 @@ input[type='checkbox'] + label span:hover {
     height: 40px;
 
     content: '';
-  
+
     opacity: .12;
     background-image: url('../img/browser.svg');
     background-repeat: no-repeat;
@@ -1719,12 +1697,13 @@ input[type='checkbox'] + label span:hover {
 
 .templates-examples-item:hover::before {
     opacity: 1;
-    box-shadow: 0 6px 15px rgba(0,1,1,0.25);
+    box-shadow: 0 6px 15px rgba(0,1,1,.25);
 }
 
 .templates-examples-item:hover .templates-examples-title {
-    opacity: 1;
     top: 347px;
+
+    opacity: 1;
 }
 
 .templates-examples-title {
@@ -1735,12 +1714,10 @@ input[type='checkbox'] + label span:hover {
     min-height: 231px;
     padding-top: 13px;
 
-   
     text-align: center;
 
     opacity: 0;
     background-color: #eee;
-
 }
 
 .templates-examples-title:hover {
@@ -1755,12 +1732,10 @@ input[type='checkbox'] + label span:hover {
     text-transform: uppercase;
 
     color: #000;
-
-
 }
 
 .catalog-link {
-    color: #000000;
+    color: #000;
 }
 
 .templates-examples-text {
@@ -1768,10 +1743,9 @@ input[type='checkbox'] + label span:hover {
     font-weight: normal;
 
     margin-top: -20px;
+    margin-top: -16px;
 
     color: #666;
-
-    margin-top: -16px;
 }
 
 .templates-examples-price {
@@ -1918,20 +1892,22 @@ input[type='checkbox'] + label span:hover {
 }
 
 .pagination-item-current {
+    position: relative;
+
     width: 44px;
     height: 44px;
-    
+
     border: 3px solid #dbdbdb;
     border-radius: 2px 2px 2px 2px;
     background-color: #fff;
-    position: relative;
 }
 
-.pagination-item-current a { 
-    text-align: center;
-    left: 17px;
-    bottom: -5px;
+.pagination-item-current a {
     position: absolute;
+    bottom: -5px;
+    left: 17px;
+
+    text-align: center;
 }
 
 .pagination-item:hover:not(.pagination-item-current) {
