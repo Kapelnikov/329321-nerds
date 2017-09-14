@@ -88,7 +88,7 @@ input[type='radio'].visually-hidden {
     display: block;
 
     margin-top: 6px;
-    margin-left: 66px;
+    
 }
 
 .page-logo-image-inner {
@@ -364,6 +364,11 @@ input[type='radio'].visually-hidden {
     display: none;
 }
 
+.slides {
+    position: relative;
+    height: 418px;
+}
+
 #btn-1:checked ~ .slides .slide:nth-child(1) {
     display: block;
 }
@@ -389,7 +394,7 @@ input[type='radio'].visually-hidden {
     margin: 0;
     padding: 0;
     margin-bottom: 65px;
-    
+
     list-style: none;
 
     -webkit-box-pack: justify;
@@ -452,6 +457,8 @@ input[type='radio'].visually-hidden {
 
     width: 1160px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 58px;
 
     border-top: 2px solid #eee;
