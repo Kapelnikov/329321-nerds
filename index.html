@@ -11,7 +11,7 @@
    </head>
    <body>
          <header class="page-header">
-            <div class="container">
+            <div class="container header-wrapper">
             <a>
             <img alt="логотип студии Нёрдс" class="page-logo-image" src="img/nerds-logo.svg" width="160" height="65">
             </a>
@@ -38,10 +38,10 @@
             </nav>
             </div>
          </header>
-         <main class="container">
+         <main>
             <h1 class="visually-hidden">Веб-студия Нёрдс из Краснодара</h1>
             <div class="slider-wrapper">
-               <div class="slider">
+               <div class="slider container">
                   <input checked id="btn-1" name="toggle" type="radio">
                   <input id="btn-2" name="toggle" type="radio">
                   <input id="btn-3" name="toggle" type="radio">
@@ -82,7 +82,7 @@
                </div>
             </div>
             <h2 class="visually-hidden">Услуги веб-студии Нёрдс</h2>
-            <section class="company-features">
+            <section class="company-features container">
                <ul class="company-features-list">
                   <li class="company-features-list-item">
                      <img alt="иконка веб-сайтов" class="company-features-img" height="146" src="img/illustration-1.png" width="300">
@@ -164,9 +164,7 @@
                </ul>
             </section>
          </main>
-         <footer class="page-footer">
-            <div class="container">
-            <div class="contact-map">
+         <div class="contact-map">
                <img alt="маркер на карте студии Нёрдс" class="client-marker" height="190" src="img/map-marker.png" width="231">
                <div class="company-adress">
                   <p class="footer-company-title">Nёrds design studio</p>
@@ -177,6 +175,9 @@
                   </a>
                </div>
             </div>
+         <footer class="page-footer">
+            <div class="container">
+            
             <div class="write-us-form-wrapper">
                <p class="write-us-form-heading">Напишите нам</p>
                <form action="https://htmlacademy.ru/" class="write-us-form" method="post">
