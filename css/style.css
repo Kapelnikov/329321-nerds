@@ -6,8 +6,14 @@ html {
 body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
+    padding: 0;
+    margin: 0 auto;
 
-    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -59,11 +65,6 @@ input[type='radio'].visually-hidden {
             clip-path: inset(100%);
 }
 
-.page-container {
-    width: 1440px;
-    margin: 0 auto;
-}
-
 .page-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -75,6 +76,7 @@ input[type='radio'].visually-hidden {
 
     -ms-flex-pack: distribute;
     justify-content: space-around;
+
 }
 
 .page-logo-image {
@@ -369,6 +371,10 @@ input[type='radio'].visually-hidden {
     display: block;
 }
 
+.company-features {
+
+}
+
 .company-features-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -388,6 +394,8 @@ input[type='radio'].visually-hidden {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+
 }
 
 .company-features-list-item {
@@ -1653,6 +1661,8 @@ input[type='checkbox'] + label span:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  
+
 
     width: 760px;
     margin: 0;
@@ -1674,6 +1684,7 @@ input[type='checkbox'] + label span:hover {
 
     width: 360px;
     margin-top: 75px;
+  
 }
 
 .templates-examples-item:hover {
@@ -1701,23 +1712,25 @@ input[type='checkbox'] + label span:hover {
 }
 
 .templates-examples-item:hover .templates-examples-title {
-    top: 347px;
+    
 
     opacity: 1;
 }
 
 .templates-examples-title {
     position: absolute;
-    top: 347px;
-
+    bottom: 0;
+    
     width: 360px;
-    min-height: 231px;
+   
+
     padding-top: 13px;
 
     text-align: center;
 
     opacity: 0;
     background-color: #eee;
+    
 }
 
 .templates-examples-title:hover {
@@ -1742,10 +1755,12 @@ input[type='checkbox'] + label span:hover {
     font-size: 16px;
     font-weight: normal;
 
-    margin-top: -20px;
+
     margin-top: -16px;
 
-    color: #666;
+    color: #000;
+
+
 }
 
 .templates-examples-price {

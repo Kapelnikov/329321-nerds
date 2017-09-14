@@ -4,12 +4,14 @@
       <meta charset="utf-8">
       <title>HTML Academy: Нёрдс</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-      <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style-min.css" rel="stylesheet">
+      <link href="css/normalize-min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <!--Скрипт LiveReload-->
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
    </head>
    <body>
-      <div class="page-container">
          <header class="page-header">
+            <div class="container">
             <a>
             <img alt="логотип студии Нёрдс" class="page-logo-image" src="img/nerds-logo.svg" width="160" height="65">
             </a>
@@ -34,6 +36,7 @@
                   </li>
                </ul>
             </nav>
+            </div>
          </header>
          <main class="container">
             <h1 class="visually-hidden">Веб-студия Нёрдс из Краснодара</h1>
@@ -162,6 +165,7 @@
             </section>
          </main>
          <footer class="page-footer">
+            <div class="container">
             <div class="contact-map">
                <img alt="маркер на карте студии Нёрдс" class="client-marker" height="190" src="img/map-marker.png" width="231">
                <div class="company-adress">
@@ -214,8 +218,8 @@
                   </p>
                </div>
             </div>
+            </div>
          </footer>
-      </div>
       <script src="js/script-min.js"></script>
    </body>
 </html>
