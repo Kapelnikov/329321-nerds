@@ -1,13 +1,9 @@
 
-html {
-    overflow-x: hidden;
-}
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     padding: 0;
-    margin: 0 auto;
 
 }
 
@@ -16,6 +12,7 @@ body {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+
 }
 
 .header-wrapper {
@@ -71,16 +68,12 @@ input[type='radio'].visually-hidden {
 }
 
 .page-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    
 
     padding-top: 45px;
 
     background-color: #eee;
 
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
 
 }
 
@@ -92,7 +85,8 @@ input[type='radio'].visually-hidden {
 }
 
 .page-logo-image-inner {
-    margin-top: 6px;
+
+    
 }
 
 .page-logo-image:hover {
@@ -110,6 +104,7 @@ input[type='radio'].visually-hidden {
 
     width: 920px;
     margin: 0;
+    margin-left: 159px;
     padding: 0;
 
     -webkit-box-pack: justify;
@@ -161,7 +156,7 @@ input[type='radio'].visually-hidden {
 }
 
 .user-navigation {
-    margin-right: 59px;
+    margin-right: -8px;
 
     list-style: none;
 }
@@ -587,7 +582,7 @@ input[type='radio'].visually-hidden {
 .company-clients {
     width: 1160px;
     margin: 0 auto;
-
+    margin-bottom: 80px;
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
 }
@@ -683,10 +678,22 @@ input[type='radio'].visually-hidden {
     margin-top: -469px;
 }
 
+.contact-map {
+    position: relative;
+    
+    height: 416px;
+
+    background-image: url('../img/layer-map.png'); /* подложка под фрейм карты */
+    background-repeat: no-repeat;
+    background-position: 50% 42%;
+    margin: 0 auto;
+    margin-bottom: -82px
+}
+
 .company-adress {
     position: absolute;
-    top: 52px;
-    left: 140px;
+    top: 53px;
+    left: 50px;
 
     width: 319px;
     height: 306px;
@@ -747,24 +754,6 @@ input[type='radio'].visually-hidden {
     color: #fff;
 }
 
-.contact-map {
-    position: relative;
-    width: 1440px;
-    height: 416px;
-
-    background-color: #eee; /* подложка под картинку карты (серый фон) */
-    background-image: url('../img/layer-map.jpg'); /* подложка под фрейм карты */
-    background-repeat: no-repeat;
-    background-position: 50% 42%;
-    margin: 0 auto;
-}
-
-.client-marker {
-    position: absolute;
-    top: 87px;
-    left: 700px;
-}
-
 .social-sites {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -791,7 +780,7 @@ input[type='radio'].visually-hidden {
     height: 100px;
     margin: 0;
     margin-top: 18px;
-    margin-right: 92px;
+    margin-right: 82px;
     padding: 0;
 
     list-style: none;
@@ -805,7 +794,7 @@ input[type='radio'].visually-hidden {
     width: 78px;
     height: 78px;
     margin: 0;
-    margin-left: 13px;
+    margin-left: 6px;
 
     border-radius: 50px;
     background: #e1e1e1;
@@ -875,7 +864,7 @@ input[type='radio'].visually-hidden {
 
 .social-discount {
     width: 560px;
-    margin-right: 210px;
+    margin-right: 220px;
 }
 
 .social-discount-title {
@@ -1199,14 +1188,21 @@ textarea::placeholder {
 .main-heading {
     font-size: 55px;
     font-weight: 500;
-
+    
     margin-top: -2px;
+    margin-left: -14px;
+    margin: 0 auto;
     padding: 63px;
     padding-bottom: 105px;
 
     text-align: center;
 
     color: #000;
+    background-color: #eee;
+}
+
+.main-heading-wrapper {
+    margin: 0 auto;
     background-color: #eee;
 }
 
@@ -1217,7 +1213,8 @@ textarea::placeholder {
 
     width: 1160px;
     margin: 0 auto;
-    margin-bottom: 530px;
+    margin-top: 38px;
+    margin-bottom: 555px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1856,6 +1853,7 @@ input[type='checkbox'] + label span:hover {
 
     width: 444px;
     margin-top: 49px;
+    margin-bottom: -500px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
