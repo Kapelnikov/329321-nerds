@@ -80,7 +80,7 @@ input[type='radio'].visually-hidden {
 .page-logo-image {
     display: block;
 
-    margin-top: 6px;
+    margin-top: 8px;
     
 }
 
@@ -693,7 +693,7 @@ input[type='radio'].visually-hidden {
 .company-adress {
     position: absolute;
     top: 53px;
-    left: 50px;
+    left: 371px;
 
     width: 319px;
     height: 306px;
@@ -884,8 +884,8 @@ input[type='radio'].visually-hidden {
 .write-us-form-wrapper {
     position: fixed;
     z-index: 1000;
-    top: 0;
-    right: -90px;
+    top: 30px;
+    right: 0px;
     bottom: 0;
     left: 0;
 
