@@ -1,22 +1,25 @@
-
-
 body {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
-    padding: 0;
 
+    padding: 0;
 }
 
 .container {
     width: 1160px;
     margin: 0 auto;
-    padding-left: 20px;
     padding-right: 20px;
-
+    padding-left: 20px;
 }
 
 .header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+}
+
+.footer-wrapper {
+    position: relative;
 }
 
 a {
@@ -68,25 +71,16 @@ input[type='radio'].visually-hidden {
 }
 
 .page-header {
-    
-
     padding-top: 45px;
 
     background-color: #eee;
-
-
 }
 
 .page-logo-image {
     display: block;
 
+    width: 170px;
     margin-top: 8px;
-    
-}
-
-.page-logo-image-inner {
-
-    
 }
 
 .page-logo-image:hover {
@@ -129,8 +123,8 @@ input[type='radio'].visually-hidden {
 .site-navigation-list li {
     margin: 0;
     margin-top: 20px;
-    margin-right: 31px;
-    margin-left: 15px;
+    margin-right: 39px;
+    margin-left: 7px;
     padding: 0;
 }
 
@@ -361,6 +355,7 @@ input[type='radio'].visually-hidden {
 
 .slides {
     position: relative;
+
     height: 418px;
 }
 
@@ -376,10 +371,6 @@ input[type='radio'].visually-hidden {
     display: block;
 }
 
-.company-features {
-
-}
-
 .company-features-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -387,8 +378,8 @@ input[type='radio'].visually-hidden {
 
     width: 1100px;
     margin: 0;
-    padding: 0;
     margin-bottom: 65px;
+    padding: 0;
 
     list-style: none;
 
@@ -398,8 +389,6 @@ input[type='radio'].visually-hidden {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
-
 }
 
 .company-features-list-item {
@@ -452,9 +441,9 @@ input[type='radio'].visually-hidden {
 
     width: 1160px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-bottom: 58px;
+    padding-right: 20px;
+    padding-left: 20px;
 
     border-top: 2px solid #eee;
 
@@ -568,21 +557,39 @@ input[type='radio'].visually-hidden {
 .company-merits-numerals {
     font-size: 45px;
     font-weight: bold;
-
+    position: relative;
     color: #000;
+}
+
+.company-merits-numerals:nth-child(2) {
+    left: 4px;
+}
+
+.company-merits-numerals:nth-child(3) {
+    left: 12px;
 }
 
 .company-merits-facts {
     font-size: 16px;
     font-weight: 400;
-
+    position: relative;
     color: #283136;
+}
+
+.company-merits-facts:nth-child(2) {
+    left: 4px;
+}
+
+
+.company-merits-facts:nth-child(3) {
+    left: 12px;
 }
 
 .company-clients {
     width: 1160px;
     margin: 0 auto;
     margin-bottom: 80px;
+
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
 }
@@ -680,20 +687,20 @@ input[type='radio'].visually-hidden {
 
 .contact-map {
     position: relative;
-    
+
     height: 416px;
+    margin: 0 auto;
+    margin-bottom: -82px;
 
     background-image: url('../img/layer-map.png'); /* подложка под фрейм карты */
     background-repeat: no-repeat;
     background-position: 50% 42%;
-    margin: 0 auto;
-    margin-bottom: -82px
 }
 
 .company-adress {
     position: absolute;
-    top: 53px;
-    left: 371px;
+    bottom: 274px;
+    left: 21px;
 
     width: 319px;
     height: 306px;
@@ -794,7 +801,8 @@ input[type='radio'].visually-hidden {
     width: 78px;
     height: 78px;
     margin: 0;
-    margin-left: 6px;
+    margin-right: 5px;
+    margin-left: 4px;
 
     border-radius: 50px;
     background: #e1e1e1;
@@ -885,7 +893,7 @@ input[type='radio'].visually-hidden {
     position: fixed;
     z-index: 1000;
     top: 30px;
-    right: 0px;
+    right: 0;
     bottom: 0;
     left: 0;
 
@@ -1188,11 +1196,11 @@ textarea::placeholder {
 .main-heading {
     font-size: 55px;
     font-weight: 500;
-    
-    margin-top: -2px;
-    margin-left: -14px;
+
     margin: 0 auto;
-    padding: 63px;
+    margin-top: 0px;
+    
+    padding-top: 60px;
     padding-bottom: 105px;
 
     text-align: center;
@@ -1203,6 +1211,7 @@ textarea::placeholder {
 
 .main-heading-wrapper {
     margin: 0 auto;
+
     background-color: #eee;
 }
 
@@ -1247,7 +1256,10 @@ textarea::placeholder {
 }
 
 .cost {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     margin-top: -20px;
     padding: -1px;
@@ -1263,7 +1275,10 @@ textarea::placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     width: 200px;
     margin: 0;
@@ -1520,7 +1535,10 @@ input[type='checkbox'] + label span:hover {
 }
 
 .filter-form fieldset {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .filter-form legend {
@@ -1670,11 +1688,10 @@ input[type='checkbox'] + label span:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  
-
 
     width: 760px;
     margin: 0;
+    margin-top: 7px;
     padding: 0;
 
     list-style: none;
@@ -1692,12 +1709,12 @@ input[type='checkbox'] + label span:hover {
     position: relative;
 
     width: 360px;
-    margin-top: 75px;
-  
+    margin-top: 69px;
 }
 
 .templates-examples-item:hover {
-    box-shadow: 0 6px 15px rgba(0,1,1,.25);
+    -webkit-box-shadow: 0 6px 15px rgba(0,1,1,.25);
+            box-shadow: 0 6px 15px rgba(0,1,1,.25);
 }
 
 .templates-examples-item::before {
@@ -1717,29 +1734,25 @@ input[type='checkbox'] + label span:hover {
 
 .templates-examples-item:hover::before {
     opacity: 1;
-    box-shadow: 0 6px 15px rgba(0,1,1,.25);
+    -webkit-box-shadow: 0 6px 15px rgba(0,1,1,.25);
+            box-shadow: 0 6px 15px rgba(0,1,1,.25);
 }
 
 .templates-examples-item:hover .templates-examples-title {
-    
-
     opacity: 1;
 }
 
 .templates-examples-title {
     position: absolute;
     bottom: 0;
-    
-    width: 360px;
-   
 
+    width: 360px;
     padding-top: 13px;
 
     text-align: center;
 
     opacity: 0;
     background-color: #eee;
-    
 }
 
 .templates-examples-title:hover {
@@ -1764,12 +1777,9 @@ input[type='checkbox'] + label span:hover {
     font-size: 16px;
     font-weight: normal;
 
-
-    margin-top: -16px;
+    margin-top: -14px;
 
     color: #000;
-
-
 }
 
 .templates-examples-price {
@@ -1778,11 +1788,11 @@ input[type='checkbox'] + label span:hover {
 
     width: 82px;
     margin: 0 auto;
-    margin-top: 32px;
+    margin-top: 33px;
     margin-bottom: 43px;
-    padding-top: 15px;
+    padding-top: 16px;
     padding-right: 60px;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
     padding-left: 60px;
 
     text-align: center;
@@ -1852,8 +1862,8 @@ input[type='checkbox'] + label span:hover {
     display: flex;
 
     width: 444px;
-    margin-top: 49px;
-    margin-bottom: -500px;
+    margin-top: 59px;
+    margin-bottom: -495px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
